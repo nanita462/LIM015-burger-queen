@@ -1,8 +1,8 @@
 import React from 'react';
-import WaiterHeader from './WaiterHeader';
-import WaiterMenu from './WaiterMenu'
-import WaiterMenu1 from './WaiterMenu1'
-import WaiterSummary from './WaiterSummary';
+import WaiterHeader from './WaiterHeader.jsx';
+import WaiterMenu from './WaiterMenu.jsx'
+import WaiterMenu3 from './WaiterMenu3.jsx'
+import WaiterSummary from './WaiterSummary.jsx';
 
 const Waiter = () => {
     return ( 
@@ -12,7 +12,7 @@ const Waiter = () => {
         <section className='waiter'>
         <section className= "menuMain">
         < WaiterMenu />
-        < WaiterMenu1 />
+        < WaiterMenu3 />
         </section> 
         
         <section className="menuSummary">

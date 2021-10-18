@@ -2,7 +2,7 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
+* [1. Preámbulo](#1-preámbu
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
@@ -31,7 +31,7 @@ código para reusarlo (lo cuál es un gran valor per se), si no que adoptamos un
 
 Como desarrolladora Front-end, estos kits de desarrollo pueden resultarte
 de gran ayuda para implementar rápidamente características de los proyectos en
-los que trabajes.
+los que trabajes..
 
 ## 2. Resumen del proyecto
 
