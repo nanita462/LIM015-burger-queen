@@ -1,9 +1,620 @@
-p {
-  color: blue;
+.secInit {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-h1 {
+.logo {
+  width: 25%;
+  height: 25%;
+  margin: 3% 0% 3% 0%;
+}
+
+.btnInit {
+  background-color: #FF4300;
+  border-radius: 25px;
+  border: none;
+  height: 100px;
+  width: 250px;
   color: white;
+  font-size: 60px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .logo {
+    width: 380px;
+    height: 480px;
+    margin: 55px 0px 35px 0px;
+  }
+
+  .btnInit {
+    background-color: #FF4300;
+    border-radius: 25px;
+    border: none;
+    height: 95px;
+    width: 240px;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+.container__User {
+  padding-top: 15%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.img__User2, .img__User3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 50px 0px 50px;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .btn__User2 {
+    background-color: #BF720E;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+    vertical-align: bottom;
+    padding-top: 4px;
+    margin-bottom: 15px;
+    border: none;
+  }
+
+  .btn__User3 {
+    background-color: #558C03;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+    vertical-align: bottom;
+    padding-top: 4px;
+    margin-bottom: 15px;
+    border: none;
+  }
+}
+.menuNames {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.menuName {
+  color: #000000;
+}
+
+.menuName:hover {
+  background-color: #FCB607;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .menuName {
+    background-color: #C4C4C4;
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    width: 120px;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0px 10px 0px 10px;
+  }
+}
+.header__chef {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-left: 2.5%;
+}
+
+.header__chef__img {
+  display: flex;
+  justify-content: center;
+}
+
+.header__chef__img a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.imgLogo {
+  width: 70px;
+  height: 90px;
+}
+
+.navHeaderChef a {
+  display: flex;
+  float: left;
+  justify-content: space-between;
+}
+
+.nav a:hover {
+  background-color: #FF4300;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .header__chef__img a {
+    font-size: 35px;
+    padding: 30px 0px 0px 10px;
+  }
+
+  .navHeaderChef a {
+    float: left;
+    color: white;
+    padding: 34px 30px 0px 0px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .fas {
+    padding-right: 5px;
+  }
+
+  .fa-bell {
+    font-size: 10px;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+}
+.menuDescriptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.breakfast {
+  display: flex;
+  justify-content: left;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .breakfast img {
+    width: 50px;
+    height: 50px;
+    margin: 0px 20px 0px 20px;
+  }
+
+  .breakfast {
+    background-color: #C4C4C4;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 450px;
+  }
+
+  .breakfast h3 {
+    padding: 8px 5px 0px 5px;
+    font-size: 20px;
+  }
+}
+.order {
+  color: #ffffff;
+  width: 95%;
+}
+
+.orderSummaryHead ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.customer {
+  display: flex;
+  justify-content: center;
+}
+
+.orderDetail ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.orderDetail {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  overflow: auto;
+}
+
+.orderDetail::-webkit-scrollbar {
+  width: 10px;
+}
+
+.orderDetail::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 5px;
+}
+
+.orderButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-plus-circle {
+  color: #558C03;
+}
+
+.fa-minus-circle {
+  color: #27c5b8;
+}
+
+.fa-trash-alt {
+  color: #E82525;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .orderSummaryHead li {
+    padding: 0px 50px 0px 50px;
+    font-size: 25px;
+  }
+
+  .customer input {
+    border-radius: 25px;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .customer input:placeholder {
+    color: #776D6D;
+    text-align: center;
+  }
+
+  .costumer h2 {
+    font-size: 15px;
+  }
+
+  .orderSummary h2 {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .orderDetail {
+    font-size: 20px;
+  }
+
+  .orderTable {
+    width: 95%;
+  }
+
+  .orderTable th, td {
+    text-align: center;
+    vertical-align: top;
+    border-collapse: collapse;
+    padding: 5px;
+    caption-side: bottom;
+  }
+
+  .orderTableTr th {
+    width: 5%;
+  }
+
+  .orderButton {
+    background-color: #C4C4C4;
+    border-radius: 25px;
+    border: none;
+    height: 70px;
+    width: 180px;
+    color: #000000;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  .orderButton:hover {
+    background-color: #558C03;
+  }
+}
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-left: 2.5%;
+}
+
+.secWaiterText {
+  display: flex;
+  justify-content: center;
+}
+
+.secWaiterText a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.littleLogo {
+  width: 70px;
+  height: 90px;
+}
+
+.nav a {
+  display: flex;
+  float: left;
+  justify-content: space-between;
+}
+
+.nav a:hover {
+  background-color: #FF4300;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .secWaiterText a {
+    font-size: 35px;
+    padding: 30px 0px 0px 10px;
+  }
+
+  .nav a {
+    float: left;
+    color: white;
+    padding: 34px 30px 0px 0px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .fas {
+    padding-right: 5px;
+  }
+
+  .fa-bell {
+    font-size: 10px;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+}
+.waiter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0px 0px 0px;
+  column-gap: 2%;
+}
+
+.menuMain {
+  border-right: solid 1px #ffffff;
+}
+
+.btnDelivery {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.btnDelivery button {
+  width: 200px;
+  padding: 10px;
+  background-color: #FF4300;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .orderTitle h2 {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .container__ChefMenu {
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;
+  }
+
+  .container__ChefMenu p {
+    background-color: #C4C4C4;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 450px;
+    padding: 10px;
+    color: #776D6D;
+    text-align: center;
+    margin: 0px;
+    font-size: 20px;
+  }
+}
+.chef__Button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.chefButton__Status {
+  color: #000000;
+}
+
+.chefButton__Status:hover {
+  background-color: #E82525;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .chefButton__Status {
+    background-color: #C4C4C4;
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    width: 120px;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0px 10px 0px 10px;
+  }
+}
+.chef {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0px 0px 0px;
+}
+
+.menuSummaryChef {
+  width: 500px;
+}
+
+.orderChef {
+  color: #ffffff;
+  width: 95%;
+}
+
+.customerChef {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderDetailChef {
+  display: flex;
+  height: 300px;
+  overflow: auto;
+}
+
+.orderDetailChef::-webkit-scrollbar {
+  width: 10px;
+}
+
+.orderDetailChef::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 5px;
+}
+
+.order__Button {
+  display: flex;
+  width: 470px;
+  justify-content: space-between;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .customerChef input {
+    border-radius: 25px;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .customerChef input:placeholder {
+    color: #776D6D;
+    text-align: center;
+  }
+
+  .customerChef h2 {
+    font-size: 20px;
+  }
+
+  .orderSummaryChef {
+    border: solid 1px #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .orderDetailChef {
+    font-size: 20px;
+  }
+
+  .orderTableChef {
+    width: 20%;
+  }
+
+  .orderTableChef p {
+    color: #ffffff;
+  }
+
+  .orderTableChef td th {
+    text-align: center;
+    vertical-align: top;
+    border-collapse: collapse;
+    padding: 5px;
+    caption-side: bottom;
+  }
+
+  .orderTable__Td {
+    align-items: center;
+  }
+
+  .btn__chefMenuLeftV2_cancelar {
+    background-color: #C4C4C4;
+    border-radius: 25px;
+    border: none;
+    height: 70px;
+    width: 180px;
+    color: #000000;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  .btn__chefMenuLeftV2_cancelar:hover {
+    background-color: #558C03;
+  }
+}
+.container__ChefMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.Chef__Menu {
+  display: flex;
+  justify-content: left;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .Chef__Menu {
+    background-color: #C4C4C4;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 450px;
+  }
+
+  .Chef__Menu p {
+    padding: 8px 5px 0px 5px;
+    font-size: 20px;
+  }
+
+  .container__ChefMenu {
+    width: 500px;
+    color: #C4C4C4;
+    height: 200px;
+    overflow: auto;
+  }
+
+  .container__ChefMenu::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .container__ChefMenu::-webkit-scrollbar-thumb {
+    background: #C4C4C4;
+    border-radius: 5px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
