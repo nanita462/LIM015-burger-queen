@@ -7,13 +7,12 @@ function WaiterHeader() {
         <section className="header">
             <section className="secWaiterText">
                 <img src={logo} className="littleLogo" alt="logoBQ" />
-                <a href='#/waiter'>Meserx</a>
+                <a href='/waiter'>Meserx</a>
             </section>
 
             <section className="nav">
-                <a href="#/home"><span><i className="fas fa-home"></i></span>Inicio</a>
-                <a href="#/users"><span><i className="fas fa-user-friends"></i></span>Usuarios</a>
-                <a href="#/orderReady"><span><i className="fas fa-hamburger"></i></span>Pedidos listos</a>
+                <a href="/order_ready"><span><i className="fas fa-hamburger"></i></span>Pedidos listos</a>
+                <a href="/"><span><i className="fas fa-sign-out-alt"></i></span>Cerrar sesión</a>
             </section>
         </section>
     );

@@ -5,9 +5,9 @@ function WaiterSummary() {
     return (
         <section className="order">
             <section className="customer">
-                
-                    <h2>Cliente:</h2>
-                    <input type="text" name="customer" placeholder='Ingresa nombre de cliente' />
+
+                <h2>Cliente:</h2>
+                <input type="text" name="customer" placeholder='Ingresa nombre de cliente' />
             </section>
 
             <section className="orderSummary">
@@ -16,72 +16,72 @@ function WaiterSummary() {
 
                 <section className='orderDetail'>
                     <table className='orderTable'>
-                    <thead>
-                    <tr>
 
-                        <td>Cant.</td>
-                        <td>Descripción</td>
-                        <td>Precio</td>
+                        <tr>
 
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr className='orderTableTr'>
+                            <td>Cant.</td>
+                            <td>Descripción</td>
+                            <td>Precio</td>
 
-                        <td>1</td>
-                        <td>hamburguesa de pollo, queso y huevo vvvvvvvvv</td>
-                        <td>$10</td>
+                        </tr>
 
-                        <th><span><i className="fas fa-plus-circle"></i></span></th>
-                        <th><span><i className="fas fa-minus-circle"></i></span></th>
-                        <th><span><i className="fas fa-trash-alt"></i></span></th>
-                    </tr><br></br>
-                    <tr className='orderTableTr'>
 
-                        <td>1</td>
-                        <td>hamburguesa de pollo, queso y huevo vvvvvvvvv</td>
-                        <td>$10</td>
+                        <tr className='orderTableTr'>
 
-                        <th><span><i className="fas fa-plus-circle"></i></span></th>
-                        <th><span><i className="fas fa-minus-circle"></i></span></th>
-                        <th><span><i className="fas fa-trash-alt"></i></span></th>
-                    </tr><br></br>
+                            <td>1</td>
+                            <td>hamburguesa de pollo, queso y huevo vvvvvvvvv</td>
+                            <td>$10</td>
 
-                    <tr className='orderTableTr'>
+                            <th><span><i className="fas fa-plus-circle"></i></span></th>
+                            <th><span><i className="fas fa-minus-circle"></i></span></th>
+                            <th><span><i className="fas fa-trash-alt"></i></span></th>
+                        </tr>
+                        <tr className='orderTableTr'>
 
-                        <td>1</td>
-                        <td>hamburguesa de pollo, queso y huevo vvvvvvvvv</td>
-                        <td>$10</td>
+                            <td>1</td>
+                            <td>hamburguesa de pollo, queso y huevo vvvvvvvvv</td>
+                            <td>$10</td>
 
-                        <th><span><i className="fas fa-plus-circle"></i></span></th>
-                        <th><span><i className="fas fa-minus-circle"></i></span></th>
-                        <th><span><i className="fas fa-trash-alt"></i></span></th>
-                    </tr><br></br>
-                    <tr className='orderTableTr'>
+                            <th><span><i className="fas fa-plus-circle"></i></span></th>
+                            <th><span><i className="fas fa-minus-circle"></i></span></th>
+                            <th><span><i className="fas fa-trash-alt"></i></span></th>
+                        </tr>
 
-                        <td>1</td>
-                        <td>hamburguesa de pollo, queso y huevo vvvvvvvvv</td>
-                        <td>$10</td>
-                        
-                    
-                    
-                        <th><span><i className="fas fa-plus-circle"></i></span></th>
-                        <th><span><i className="fas fa-minus-circle"></i></span></th>
-                        <th><span><i className="fas fa-trash-alt"></i></span></th>
-                    </tr>
-                    </tbody>
-                    
+                        <tr className='orderTableTr'>
+
+                            <td>1</td>
+                            <td>hamburguesa de pollo, queso y huevo vvvvvvvvv</td>
+                            <td>$10</td>
+
+                            <th><span><i className="fas fa-plus-circle"></i></span></th>
+                            <th><span><i className="fas fa-minus-circle"></i></span></th>
+                            <th><span><i className="fas fa-trash-alt"></i></span></th>
+                        </tr>
+                        <tr className='orderTableTr'>
+
+                            <td>1</td>
+                            <td>hamburguesa de pollo, queso y huevo vvvvvvvvv</td>
+                            <td>$10</td>
+
+
+
+                            <th><span><i className="fas fa-plus-circle"></i></span></th>
+                            <th><span><i className="fas fa-minus-circle"></i></span></th>
+                            <th><span><i className="fas fa-trash-alt"></i></span></th>
+                        </tr>
+
+
                     </table>
                 </section>
 
                 <section>
                     <h2>Total: $10 </h2>
-                    
+
                 </section>
 
-             </section>
+            </section>
 
-             <section className="orderButtons">
+            <section className="orderButtons">
                 <button className="orderButton">Cancelar</button>
                 <button className="orderButton">Enviar</button>
             </section>
