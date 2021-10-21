@@ -1,6 +1,6 @@
 import React from 'react';
 import logoBQ from '../assets/logoBQ.png';
-import BtnCloseSesion from './BtnCloseSesion.jsx';
+import BtnCloseSesion from './BtnCloseSession.jsx';
 
 const ChefHeader = () => {
     return (

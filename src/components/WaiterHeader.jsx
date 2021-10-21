@@ -1,7 +1,7 @@
 import React from 'react';
 import '../build/css/index.css'; // para aplicar estilo sass
 import logo from '../assets/logoBQ.png';
-import BtnCloseSesion from './BtnCloseSesion.jsx';
+import BtnCloseSesion from './BtnCloseSession.jsx';
 
 function WaiterHeader() {
     return (
