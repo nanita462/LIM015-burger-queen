@@ -1,6 +1,7 @@
 import React from 'react';
 import '../build/css/index.css'; // para aplicar estilo sass
 import logo from '../assets/logoBQ.png';
+import BtnCloseSesion from './BtnCloseSesion.jsx';
 
 function WaiterHeader() {
     return (
@@ -12,7 +13,8 @@ function WaiterHeader() {
 
             <section className="nav">
                 <a href="/order_ready"><span><i className="fas fa-hamburger"></i></span>Pedidos listos</a>
-                <a href="/"><span><i className="fas fa-sign-out-alt"></i></span>Cerrar sesión</a>
+                {/* <a href="/"><span><i className="fas fa-sign-out-alt"></i></span>Cerrar sesión</a> */}
+                <BtnCloseSesion />
             </section>
         </section>
     );

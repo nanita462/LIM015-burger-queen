@@ -1,5 +1,6 @@
 import React from 'react';
-import logoBQ from '../assets/logoBQ.png'
+import logoBQ from '../assets/logoBQ.png';
+import BtnCloseSesion from './BtnCloseSesion.jsx';
 
 const ChefHeader = () => {
     return (
@@ -10,7 +11,7 @@ const ChefHeader = () => {
             </section>
             <section className='header__chef__nav'>
                 <nav className='navHeaderChef'>
-                    <a href="/"><i className="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
+                    <BtnCloseSesion />
                 </nav>
             </section>
 
