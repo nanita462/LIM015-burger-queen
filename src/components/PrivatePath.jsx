@@ -6,7 +6,6 @@ import { Route, Redirect } from 'react-router-dom';
 
 const PrivatePath = ({ children, ...restProperties }) => {
     const { user } = useAuth();
-
     if (user) {
         return <Route {...restProperties}>{children}</Route>
     } else {

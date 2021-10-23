@@ -14,6 +14,7 @@ import { AuthProvider } from '../context/AuthContext.jsx';
 import PrivatePath from '../components/PrivatePath.jsx';
 
 function App() {
+
   return (
     <AuthProvider>
       <Router>
@@ -35,12 +36,18 @@ function App() {
           </PrivatePath>
 
           <Route component={Error404} />
-        </Switch>
+        </Switch >
 
-      </Router>
+      </Router >
 
     </AuthProvider >
   );
 }
 
 export default App;
+
+
+
+
+
+
