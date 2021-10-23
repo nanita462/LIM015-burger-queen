@@ -11,27 +11,44 @@ import OrderReady from '../pages/OrderReady.jsx';
 import Error404 from '../pages/Error404.jsx';
 
 import { AuthProvider } from '../context/AuthContext.jsx';
+import PrivatePath from '../components/PrivatePath.jsx';
+
 
 function App() {
+
   return (
     <AuthProvider>
-
       <Router>
-
         <Switch>
+
+          {/* <Route exact path='/home' component={Home} /> */}
           <Route exact path='/' component={Home} />
-          <Route exact path='/waiter' component={Waiter} />
-          <Route exact path='/order_ready' component={OrderReady} />
-          <Route exact path='/chef' component={ChefMenuPending} />
+
+          <PrivatePath path='/waiter'>
+            <Waiter />
+          </PrivatePath>
+
+          <PrivatePath path='/order_ready'>
+            <OrderReady />
+          </PrivatePath>
+
+          <PrivatePath path='/chef'>
+            <ChefMenuPending />
+          </PrivatePath>
 
           <Route component={Error404} />
-
         </Switch>
 
       </Router>
 
-    </AuthProvider>
+    </AuthProvider >
   );
 }
 
 export default App;
+
+
+
+
+
+
