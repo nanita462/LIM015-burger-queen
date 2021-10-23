@@ -209,21 +209,9 @@
   width: 95%;
 }
 
-.orderSummaryHead ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
 .customer {
   display: flex;
   justify-content: center;
-}
-
-.orderDetail ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
 }
 
 .orderDetail {
@@ -614,6 +602,59 @@
   .container__ChefMenu::-webkit-scrollbar-thumb {
     background: #C4C4C4;
     border-radius: 5px;
+  }
+}
+.secHome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 150px 100px 150px 100px;
+  column-gap: 2%;
+}
+
+.secHome__form {
+  border: solid 1px #ffffff;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.formLogin {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .secHome__form h2 {
+    padding: 65px 0px 0px 0px;
+  }
+
+  .formLogin__name {
+    border-radius: 25px;
+    width: 300px;
+    height: 55px;
+    margin-top: 20px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .formLogin__name::placeholder {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .formLogin__submit {
+    margin-top: 25px;
+    border: none;
+    width: 140px;
+    height: 55px;
+    border-radius: 25px;
+    font-size: 25px;
+    background-color: #FF4300;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    letter-spacing: 1px;
   }
 }
 
