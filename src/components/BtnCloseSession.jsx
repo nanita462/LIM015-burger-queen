@@ -16,9 +16,10 @@ const BtnCloseSesion = () => {
     }
     return (
         <>
-            <button className="btnClose" as="button" onClick={closeSesion} >
+            {/* *****CAMBIE BUTTON POR H2 PARA QUE SE VEA MEJOR HEADER en waiter y chef*/}
+            <h2 className="btnClose" as="button" onClick={closeSesion} >
                 <i className="fas fa-sign-out-alt"></i>Cerrar Sesión
-            </button>
+            </h2>
         </>
     );
 }
