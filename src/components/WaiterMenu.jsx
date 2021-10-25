@@ -1,15 +1,35 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { firestore } from '../firebase/config';
 
 
 //import { Link } from 'react-router-dom';
 
-const WaiterMenu = () => {
+const WaiterMenu = (props) => {
     const [menu, setMenu]= React.useState([])
     const [types, setTypes]= React.useState('Desayuno') 
-    
+    console.log(props, props.onclickProduct)
 
-    React.useEffect(()=>{
+
+   
+    // const addProduct= (product) => {
+      
+    // //     let itemAdd = {};
+    // //    // itemAdd.product = e.target.value ;
+    // //     itemAdd.products = product;
+        
+    
+    //     firestore.collection("orders")
+    //       .doc(product.id).update({
+    //         products: [product]
+    //       })
+    //       .then((p) => {
+    //         console.log(p)
+    //       })
+    //       .catch((error) => {
+    //         console.log(error);
+    //       });
+    //   };
+    useEffect(()=>{
         const getData= async ()=>{
             try{
                 const menuData= await firestore.collection('menu').get();
@@ -38,7 +58,7 @@ const WaiterMenu = () => {
         <section className="cards">
                 {
                   menu.filter(product => product.type === types).map((item) => (
-                     <button key= {item.id}>{item.product} <p>$ {item.price}</p></button>
+                     <button onClick={() => {props.onclickProduct(item.product, item.price)}} value= {item.product} valueprice= {item.price} key= {item.id}>{item.product} <p>$ {item.price}</p></button>
                   
                   ))
                 }

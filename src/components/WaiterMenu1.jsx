@@ -7,6 +7,7 @@ import juice from '../assets/jugodefrutas.png';
 
 
 function WaiterMenu1(props) {
+    
     return (
         <>
        

@@ -1,11 +1,10 @@
 import React, { useRef } from 'react';
 import '../build/css/index.css'; // para aplicar estilo sass
 import { firestore } from '../firebase/config';
-import WaiterMenu from './WaiterMenu';
 
 function WaiterSummary({ summary, setSummary }) {
 
-  const itemsPrice = summary.reduce((a, c) => a + c.quantity * c.price, 0);
+  //const itemsPrice = summary.reduce((a, c) => a + c.quantity * c.price, 0);
   const inputName = useRef();
 
   const sendOrder = (e) => {
@@ -14,7 +13,6 @@ function WaiterSummary({ summary, setSummary }) {
     let order = {};
     order.name = inputName.current.value || "anonimo";
     order.products = summary;
-    // ver si se agrega a new DATE: .toLocaleString("es-PE"),
     order.created_at = new Date();
     order.status = "pending";
 
@@ -33,8 +31,8 @@ function WaiterSummary({ summary, setSummary }) {
   return (
     <>
       <section className="order">
-
         <section className="customer">
+
           <h2>Cliente:</h2>
           <input ref={inputName} type="text" name="customer" placeholder='Ingresa nombre de cliente' />
         </section>
@@ -55,16 +53,12 @@ function WaiterSummary({ summary, setSummary }) {
             summary.map((product) => (
               <section className='tbody' key={product.id}>
                 <ul className='tr'>
-                  <li className='li'> {product.quantity} </li>
+                  {/* <li className='li'> {product.quantity} </li> */}
                   <li className='li'>
-                    <WaiterMenu
-                      key={product.id}
-                      product={product}
-                      summary={summary}
-                      setSummary={setSummary}
-                    />
+
+
                   </li>
-                  <li className='li'> $ {product.price}</li>
+                  {/* <li className='li'> ${product.price}</li> */}
                   <li className='li'>
 
                   </li>
@@ -75,22 +69,18 @@ function WaiterSummary({ summary, setSummary }) {
         </section>
         <hr></hr>
         <h2>
-          <strong>Total: $ {parseFloat(itemsPrice).toFixed(2)}</strong>
+          {/* <strong>Total: ${parseFloat(itemsPrice).toFixed(2)}</strong> */}
+
         </h2>
 
+        <section className="orderButtons">
+          <button className="orderButton">Cancelar</button>
+          <button onClick={sendOrder} className="orderButton">Enviar</button>
+        </section>
+
       </section>
-
-
-
-      <section className="orderButtons">
-        <button className="orderButton">Cancelar</button>
-        <button onClick={sendOrder} className="orderButton">Enviar</button>
-      </section>
-
-
     </>
   );
-
 }
 
 export default WaiterSummary;
