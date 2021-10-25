@@ -11,6 +11,10 @@ const Waiter = () => {
     // const { user } = useAuth();
     // console.log(user)
     const [summary, setSummary]= useState([])
+    const addProducts = (product,price) =>{
+        setSummary([...summary, product, price])
+        
+    }
 
     return (
         <>
@@ -18,7 +22,8 @@ const Waiter = () => {
             < WaiterHeader />
             <section className='waiter'>
                 <section className="menuMain">
-                    < WaiterMenu />
+                    < WaiterMenu onclickProduct={addProducts} />
+                    
                     {/* < Data /> */}
                     {/* < WaiterMenu1 />  */}
                 </section>
