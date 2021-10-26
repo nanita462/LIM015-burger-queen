@@ -344,7 +344,7 @@
 }
 
 .nav a:hover {
-  background-color: #FF4300;
+  color: #FF4300;
 }
 
 @media screen and (min-height: 768px) and (min-width: 1024px) {
@@ -656,6 +656,59 @@
     color: #ffffff;
     letter-spacing: 1px;
   }
+}
+.btnClose:hover {
+  color: #FF4300;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .btnClose {
+    float: left;
+    color: white;
+    padding: 38px 30px 0px 0px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+}
+.menuNames {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.menuName {
+  color: #000000;
+}
+
+.menuName:hover {
+  background-color: #FCB607;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .menuName {
+    background-color: #C4C4C4;
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    width: 120px;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 10px 10px 0px 10px;
+  }
+}
+.waiter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0px 0px 0px;
+  column-gap: 2%;
+}
+
+.menuMain {
+  border-right: solid 1px #ffffff;
+}
+
+.menuSummary {
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

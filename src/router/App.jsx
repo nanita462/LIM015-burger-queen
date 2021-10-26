@@ -1,37 +1,53 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-//BrowserRouter: conecta la app a la URL del navegador, identifica la navegacion hacia atras/adelante
-//Route: ruta
-//Switch: estructura de control para cada ruta
-import '../build/css/index.css'; // para aplicar estilo sass
-import Waiter from '../pages/Waiter.jsx';
-import Home from '../pages/Home.jsx';
-import ChefMenuPending from '../pages/ChefMenuPending.jsx';
-import OrderReady from '../pages/OrderReady.jsx';
-import Error404 from '../pages/Error404.jsx';
+// import React from 'react';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// //BrowserRouter: conecta la app a la URL del navegador, identifica la navegacion hacia atras/adelante
+// //Route: ruta
+// //Switch: estructura de control para cada ruta
+// import '../build/css/index.css'; // para aplicar estilo sass
+// import Waiter from '../pages/Waiter.jsx';
+// import Home from '../pages/Home.jsx';
+// import ChefMenuPending from '../pages/ChefMenuPending.jsx';
+// import OrderReady from '../pages/OrderReady.jsx';
+// import Error404 from '../pages/Error404.jsx';
 
-import { AuthProvider } from '../context/AuthContext.jsx';
+// import { AuthProvider } from '../context/AuthContext.jsx';
+// import PrivatePath from '../components/PrivatePath.jsx';
 
-function App() {
-  return (
-    <AuthProvider>
+// function App() {
 
-      <Router>
+//   return (
+//     <AuthProvider>
+//       <Router>
+//         <Switch>
 
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/waiter' component={Waiter} />
-          <Route exact path='/order_ready' component={OrderReady} />
-          <Route exact path='/chef' component={ChefMenuPending} />
+//           {/* <Route exact path='/home' component={Home} /> */}
+//           <Route exact path='/' component={Home} />
 
-          <Route component={Error404} />
+//           <PrivatePath path='/waiter'>
+//             <Waiter />
+//           </PrivatePath>
 
-        </Switch>
+//           <PrivatePath path='/order_ready'>
+//             <OrderReady />
+//           </PrivatePath>
 
-      </Router>
+//           <PrivatePath path='/chef'>
+//             <ChefMenuPending />
+//           </PrivatePath>
 
-    </AuthProvider>
-  );
-}
+//           <Route component={Error404} />
+//         </Switch >
 
-export default App;
+//       </Router >
+
+//     </AuthProvider >
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+

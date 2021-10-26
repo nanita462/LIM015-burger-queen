@@ -1,8 +1,8 @@
 import React from 'react';
 import logoBQ from '../assets/logoBQ.png';
-import BtnCloseSesion from './BtnCloseSession.jsx';
+import BtnCloseSesion from '../comp/BtnCloseSession.jsx';
 
-const ChefHeader = () => {
+const HeaderChef = () => {
     return (
         <header className="header__chef">
             <section className='header__chef__img'>
@@ -17,21 +17,4 @@ const ChefHeader = () => {
         </header>
     );
 }
-export default ChefHeader;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default HeaderChef;

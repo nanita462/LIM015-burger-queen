@@ -1,15 +1,15 @@
-import React from 'react';
-import '../build/css/index.css'; // para aplicar estilo sass
+// import React from 'react';
+// import '../build/css/index.css'; // para aplicar estilo sass
 
-import LogIn from '../components/LogIn.jsx';
+// import LogIn from '../components/LogIn.jsx';
 
-function Home() {
+// function Home() {
 
-  return (
-    <>
-      <LogIn />
-    </>
-  );
-}
+//   return (
+//     <>
+//       <LogIn />
+//     </>
+//   );
+// }
 
-export default Home;
+// export default Home;
