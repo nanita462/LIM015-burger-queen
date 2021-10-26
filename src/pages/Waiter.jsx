@@ -8,7 +8,6 @@ import WaiterSummary from '../components/WaiterSummary.jsx';
 // import { useAuth } from '../context/AuthContext.jsx';
 // import Error404 from './Error404.jsx';
 
-
 const Waiter = () => {
     // const { user } = useAuth();
     // console.log(user)
@@ -21,7 +20,7 @@ const Waiter = () => {
     return (
         <>
 
-            < WaiterHeader />
+            < WaiterHeader />d
             <section className='waiter'>
                 <section className="menuMain">
                     < WaiterMenu onclickProduct={addProducts} />
