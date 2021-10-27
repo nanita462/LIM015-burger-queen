@@ -5,7 +5,7 @@ const UseOrdersPending = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        firestore.collection("pedidos")
+        firestore.collection("order")
             .where("state", "==", "pending")
             .onSnapshot((snapshot) => {
                 let newOrders = snapshot.docs.map((doc) => ({

@@ -7,7 +7,7 @@ const CancelWarning = () => {
     const [singleOrder, setSingleOrder] = useContext(SingleOrderContext);
 
     const orderStateAsCanceled = (orderIdentifier) => {
-        firestore.collection("pedidos")
+        firestore.collection("order")
             .doc(orderIdentifier)
             .update({
                 state: "canceled",
