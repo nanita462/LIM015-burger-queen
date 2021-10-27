@@ -22,7 +22,7 @@ const DoneButtonForChef = () => {
                 .doc(orderIdentifier)
                 .update({
                     state: "prepared",
-                    done_time: new Date().toLocaleString("es-CO"),
+                    done_time: new Date().toLocaleString("es-PE"),
                 })
                 .then(() => {
                     console.log("updated the state to prepared");
