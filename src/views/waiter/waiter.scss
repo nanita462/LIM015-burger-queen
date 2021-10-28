@@ -1,0 +1,232 @@
+@import '../../router/App.scss';
+
+.menu-container {
+    padding: 2px;
+}
+.waiter-box{
+    @include media(xs) {
+        display:none;
+        }
+}
+.menu-order-title {
+    width: 50%;
+    display: flex;
+    padding: 5px;
+    margin-left: 25px;
+    @include media(md) {
+        width: 78%;
+      }
+
+    h3 {
+        flex-grow: 0.3;
+        color: white;
+        font-family: $titles2-font;
+        font-size: 15px;
+        font-weight: 50;
+    }
+}
+
+.menu-option {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 130px;
+    display: block;
+    float: left;
+}
+
+.menu-nav {
+    li {
+        display: inline;
+        color: $c-darkBrown;
+        font-size: 40px;
+        font-family: $titles1-font;
+        padding: 22px;
+        cursor: pointer;
+        margin-right: 3px;
+        transition: color 0.4s linear 0.2s;
+
+        &:hover {
+            color: $c-ligthBrown;
+        }
+
+        &:nth-child(n+2):before {
+            content: '';
+            border-right: 1px solid white;
+            margin-right: 10px;
+        }
+
+        @include media(md) {
+            padding: 10px;
+        }
+    }
+}
+
+.menu-order {
+    font-family: $titles1-font;
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    top: 130px;
+    left: 52%;
+    border-left: 2px solid white;
+    display: block;
+    float: right;
+    padding: 10px;
+    @include media(md) {
+        width: 46%;
+        margin-right: 45%;
+      }
+}
+
+.menu-total-order {
+    color: white;
+    width: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 41%;
+    margin-bottom: 0px;
+
+    h3 {
+        font-size: 25px;
+        font-weight: 20;
+        @include media(md) {
+            margin-left: 210px;
+          }
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 10;
+    }
+}
+
+.title-menu {
+    margin-top: -0.4px;
+    margin-right: 38%;
+    text-align: center;
+    color: $c-darkBrown;
+    font-size: 40px;
+    font-weight: 50;
+    letter-spacing: 2px;
+    @include media(md) {
+        margin-right: 5%;
+      }
+}
+
+.data-button-product {
+    padding: 40px;
+    box-sizing: border-box;
+    width: 564px;
+    height: 370px;
+    // overflow-y: scroll;
+}
+
+.Orderitem-box {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 40px;
+
+    .cant {
+        width: 50px;
+    }
+
+    .product {
+        width: 150px;
+
+    }
+
+    p {
+        flex-grow: 0.1;
+        color: white;
+        font-family: 'Handlee', cursive;
+        font-size: 16px;
+    }
+}
+
+.menu-inputs {
+    margin-top: -25px;
+    margin-left: 30px;
+    margin-right: 40px;
+    padding: 10px;
+    align-items: center;
+
+    .table {
+        width: 40px;
+        height: 20px;
+        margin-left: 10px;
+        background-color: #363636;
+        outline: none;
+        border: none;
+        color: white;
+    }
+
+    .customer {
+        width: 165px;
+        height: 20px;
+        margin-right: 70px;
+        margin-left: 10px;
+        background-color: #363636;
+        outline: none;
+        border: none;
+        color: white;
+        @include media(md) {
+            width: 129px;
+          }
+
+    }
+
+}
+
+label {
+    color: white;
+    margin-left: -10px;
+    font-size: 20px;
+}
+
+.tab-order {
+    width: 60%;
+    height: 150px;
+    overflow-y: scroll;
+    @include media(md) {
+        width: 95%;
+      }
+}
+
+.menu-order-btns {
+    width: 87%;
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-around;
+
+    .cancel-btn {
+        font-family: $titles1-font;
+        color: $c-red;
+        background-color: transparent;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        @include media(md) {
+            margin-left: 20px;
+          }
+    }
+
+    .send-btn {
+        font-family: $titles1-font;
+        color: #1d1d1d;
+        background-color: #5D9B84;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        width: 200px;
+        cursor: pointer;
+        margin-right: 10%;
+        border-radius: 10px;
+        @include media(md) {
+            transform: translateX(100px);
+          }
+    }
+}
