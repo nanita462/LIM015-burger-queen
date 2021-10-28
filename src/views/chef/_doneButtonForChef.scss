@@ -1,0 +1,25 @@
+$black : #2C2C2C;
+$orange :#D4804C;
+$yellow : #FFD195;
+$green : #5D9B84;
+$white : #FFFFFF;
+$grey : #C4C4C4;
+$titles1-font : 'Anton', sans-serif;
+$titles2-font : Vast Shadow;
+$content-font : Handlee;
+
+
+.doneButtonForChef {
+    grid-column-start: 14;
+    grid-column-end: 19;
+    grid-row-start: 13;
+    grid-row-end: 15;
+    margin: auto;
+    font-family: $titles1-font;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: $green;
+    width: 100px;
+    height: 70px;
+
+}

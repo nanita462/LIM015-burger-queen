@@ -1,0 +1,45 @@
+$black : #2C2C2C;
+$orange :#D4804C;
+$yellow : #FFD195;
+$green : #5D9B84;
+$white : #FFFFFF;
+$grey : #C4C4C4;
+$titles1-font : 'Anton', sans-serif;
+$titles2-font : Vast Shadow;
+$content-font : Handlee;
+
+.ulPrepared {
+    z-index: 10000;
+    list-style: none;
+    width: 600px;
+    
+    color: $white;
+    display: flex;
+    flex-direction: column;
+
+    .preparedItems {
+        display: flex;
+        justify-content: space-between;
+        background-color: $yellow;
+        border-radius: 10px;
+        font-family: $content-font;
+        font-size: 20px;
+        color: $black;
+        height: 30px;
+        margin: 5px 0;
+        padding: 10px 20px;
+
+        div {
+            height: fit-content;
+            margin: auto 0;
+        }
+
+        button {
+            background-color: $yellow;
+            border: solid 2px $green;
+            font-family: $content-font;
+        }
+
+
+    }
+}

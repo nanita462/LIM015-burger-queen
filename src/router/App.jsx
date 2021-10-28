@@ -1,53 +1,23 @@
-// import React from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// //BrowserRouter: conecta la app a la URL del navegador, identifica la navegacion hacia atras/adelante
-// //Route: ruta
-// //Switch: estructura de control para cada ruta
-// import '../build/css/index.css'; // para aplicar estilo sass
-// import Waiter from '../pages/Waiter.jsx';
-// import Home from '../pages/Home.jsx';
-// import ChefMenuPending from '../pages/ChefMenuPending.jsx';
-// import OrderReady from '../pages/OrderReady.jsx';
-// import Error404 from '../pages/Error404.jsx';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import waiterView from "../views/waiter/waiterView.jsx";
+import ChefView from "../views/chef/ChefView.jsx";
+import Home from "../views/home/home.jsx";
+import Rol from "../views/rol/rol.jsx";
+import Error404 from "../views/404/404.jsx";
 
-// import { AuthProvider } from '../context/AuthContext.jsx';
-// import PrivatePath from '../components/PrivatePath.jsx';
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/rol" component={Rol} />
+        <Route path="/waiterOrder" component={waiterView} />
+        <Route path="/chefOrder" component={ChefView} />
+        <Route component={Error404} />
+      </Switch>
+    </Router>
+  );
+}
 
-// function App() {
-
-//   return (
-//     <AuthProvider>
-//       <Router>
-//         <Switch>
-
-//           {/* <Route exact path='/home' component={Home} /> */}
-//           <Route exact path='/' component={Home} />
-
-//           <PrivatePath path='/waiter'>
-//             <Waiter />
-//           </PrivatePath>
-
-//           <PrivatePath path='/order_ready'>
-//             <OrderReady />
-//           </PrivatePath>
-
-//           <PrivatePath path='/chef'>
-//             <ChefMenuPending />
-//           </PrivatePath>
-
-//           <Route component={Error404} />
-//         </Switch >
-
-//       </Router >
-
-//     </AuthProvider >
-//   );
-// }
-
-// export default App;
-
-
-
-
-
-
+export default App;
