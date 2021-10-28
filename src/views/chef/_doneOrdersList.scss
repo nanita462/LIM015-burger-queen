@@ -1,0 +1,47 @@
+
+$black : #2C2C2C;
+$orange :#D4804C;
+$yellow : #FFD195;
+$green : #5D9B84;
+$white : #FFFFFF;
+$grey : #C4C4C4;
+$red : #E04F4F;
+$titles1-font : 'Anton', sans-serif;
+$titles2-font : Vast Shadow;
+$content-font : Handlee;
+
+.ulDone {
+    
+    list-style: none;
+    font-size: 19px;
+    color:$green;
+    margin: 0;
+    padding: 0;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 10;
+    overflow-y: scroll;
+
+
+    .doneItem{
+        display: flex;
+            justify-content: space-between;
+            background-color: $red;
+            border-radius: 10px;
+            font-family: $content-font;
+            font-size: 20px;
+            color: $black;
+            height: 50px;
+            margin: 5px 0;
+
+        div {
+            margin: auto 15px;
+            
+            
+          
+            
+
+        }
+    }
+}

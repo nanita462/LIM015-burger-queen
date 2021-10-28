@@ -1,0 +1,32 @@
+@import '../router/App.scss';
+
+.device-message-container{
+    display: none;
+    .phone-message{         
+        text-align: center;
+        padding: 10px;
+        margin-left: 18.5%;
+        width: 220px;
+        font-size: 15px;
+        font-family: $content-font;
+        color: white;
+        font-weight: 20;
+        @include media(sm) {
+            margin-left: 25%;
+            width: 400px;
+            font-size: 30px;
+                  }
+        
+    }
+    .phone-message-image{
+        width:50%;
+        height:auto;   
+        margin:20% 0% 5% 30%; 
+        @include media(sm) {
+        margin:7% 0% 5% 30%; 
+              }
+    }
+    @include media(xs) {
+      display:block;   
+        }
+}

@@ -1,0 +1,29 @@
+$black : #2C2C2C;
+$orange :#D4804C;
+$yellow : #FFD195;
+$green : #5D9B84;
+$white : #FFFFFF;
+$grey : #C4C4C4;
+$titles1-font : 'Anton', sans-serif;
+$titles2-font : Vast Shadow;
+$content-font : Handlee;
+
+.cancelWarning {
+    font-family: $content-font;
+    color: $white;
+    justify-content: center;
+    width: 350px;
+
+}
+
+.confirm {
+    margin: auto;
+    float: center;
+    width: 80%;
+    background-color: $green;
+    height: 40px;
+    margin: 10px 0;
+    font-weight: heavy;
+    font-family: $titles1-font;
+}
+
