@@ -1,0 +1,79 @@
+{
+"Data" : [
+    {
+        "id": "b-01",
+        "product": "Cafe Americano",
+        "type": "Desayuno",
+        "price": 5
+    },
+    {
+        "id": "b-02",
+        "product": "Caffe con leche",
+        "type": "Desayuno",
+        "price": 7
+    },
+    {
+        "id": "b-03",
+        "product": "Sandwich de jamón y queso",
+        "type": "Desayuno",
+        "price": 10
+    },
+    {
+        "id": "b-04",
+        "product": "Jugo natural de frutas",
+        "type": "Desayuno",
+        "price": 7
+    },
+    {
+        "id": "hm-01",
+        "product": "Hamburguesa simple",
+        "type": "De la casa",
+        "price": 10
+        
+    },
+    {
+        "id": "hm-02",
+        "product": "Double burger",
+        "type": "De la casa",
+        "price": 15
+    },
+    {
+        "id": "s-01",
+        "product": "Papas fritas",
+        "type": "De la casa",
+        "subtype":"Acompañamiento",
+        "price": 5
+    },
+    {
+        "id": "s-02",
+        "product": "Aros de cebolla",
+        "type": "De la casa",
+        "subtype":"Acompañamiento",
+        "price": 5
+    },
+    {
+        "id": "d-01",
+        "product": "Agua 500ml",
+        "type": "Bebidas",
+        "price": 5
+    },
+    {
+        "id": "d-02",
+        "product": "Agua 750ml",
+        "type": "Bebidas",
+        "price": 7
+    },
+    {
+        "id": "d-03",
+        "product": "Gaseosa 500ml",
+        "type": "Bebidas",
+        "price": 5
+    },
+    {
+        "id": "d-04",
+        "product": "Gaseosa 750ml",
+        "type": "Bebidas",
+        "price": 7
+    }
+  ]
+}

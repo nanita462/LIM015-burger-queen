@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logoBQ.png";
 import { Link } from "react-router-dom";
-import "./header.scss";
+//import "../sass/header.scss";
 
 function HeaderChef(props) {
   return (

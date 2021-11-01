@@ -1,7 +1,7 @@
 import React, { Fragment, useContext } from "react";
 import { firestore } from "../../firebase/config";
 import SingleOrderContext from "./SingleOrderContext.jsx";
-import "../modal/cancelModal.scss";
+//import "../../sass/cancelModal.scss";
 
 const CancelWarning = () => {
   const [singleOrder, setSingleOrder] = useContext(SingleOrderContext);
@@ -22,7 +22,7 @@ const CancelWarning = () => {
   return (
     <Fragment>
       <div className="cancelWarning">
-        Please confirm you want to cancel this order
+        Por confirme que quiere borrar la orden
       </div>
       <button
         className="confirm"
@@ -30,7 +30,7 @@ const CancelWarning = () => {
           orderStateAsCanceled(singleOrder.orderId);
         }}
       >
-        CONFIRM
+        Confirme
       </button>
     </Fragment>
   );

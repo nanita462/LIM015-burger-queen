@@ -1,0 +1,27 @@
+$blackch : #2C2C2C;
+$orangech :#D4804C;
+$yellowch : #FFD195;
+$greench : #5D9B84;
+$whitech : #FFFFFF;
+$greych : #C4C4C4;
+$titles1ch-font : 'Anton', sans-serif;
+$titles2-fontch : Vast Shadow;
+$contentch-fontch : Handlee;
+
+
+.cancelButtonForChef {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 13;
+    grid-row-end: 15;
+    margin: auto;
+    font-family: $titles1ch-font;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: $blackch;
+    color: $orangech;
+    border-style: none;
+    width: 100px;
+    height: 70px;
+
+}

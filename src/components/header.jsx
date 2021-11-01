@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/logoBQ.png";
 import ordersIcon from "../assets/logoBQ.png";
 import { Link } from "react-router-dom";
-import "./header.scss";
+//import "../sass/header.scss";
 import usePreparedOrdersCount from './preparedOrdersCount.jsx';
 import Modal from '../views/modal/modal.jsx';
 import PreparedOrdersList from '../views/chef/PreparedOrdersList.jsx';

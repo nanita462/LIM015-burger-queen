@@ -1,0 +1,229 @@
+// // Main styles
+// @import url('https://fonts.googleapis.com/css2?family=Anton&family=Handlee&family=Vast+Shadow&display=swap');
+
+// //Color variables
+// $che-bg:#1d1d1d;
+// $che-yellow:#FD9301;
+// $che-ligthBrown:#FFD195;
+// $che-darkBrown:#D4804C;
+// $che-red:#E04F4F;
+// $che-green:#5D9B84;
+
+// //Font variables
+// $titles1he-font : 'Anton',
+// sans-serif;
+// $titles2he-font : 'Vast Shadow',
+// cursive;
+// $contenthe-font : 'Handlee',
+// cursive;
+
+// // media
+// $breakpointhe-xs: 360px;
+// $breakpointhe-sm: 768px;
+// $breakpointhe-md: 1024px;
+// $breakpointhe-lg: 1360px;
+
+// @mixin mediahe($media) {
+//   @if $media == xs {
+//     @media (max-width: $breakpointhe-sm) { @content; }
+//   }
+//   @else if $media == sm {
+//     @media (min-width: $breakpointhe-sm) and (max-width: $breakpointhe-md) { @content; }
+//   }
+//   @else if $media == md {
+//     @media (min-width: $breakpointhe-md) and (max-width: $breakpointhe-lg) { @content; }
+//   }
+// }
+
+// body {
+//   background: $che-bg;
+//   height: 100vh;
+//   width: 100vw;
+//   overflow: hidden;
+// }
+
+// @mixin subtitleshe-fontStyle {
+//   color: $che-darkBrown;
+//   font-size: 40px;
+//   font-family: $titles1he-font ;
+// }
+
+// @mixin buttonhe-primary {
+//   font-family: $titles1he-font ;
+//   border: none;
+//   font-size: 30px;
+//   color: $c-bg;
+//   outline: none;
+//   cursor: pointer;
+// }
+
+// // @mixin compact {
+// //   @media (max-width: #{$breakpoint}) {
+// //       @content;
+// //   }
+// // }
+
+// p.item-product {
+//   width: 150px;
+// }
+
+// img.icons {
+//   width: 25px;
+//   cursor: pointer;
+//   margin: 3px;
+// }
+
+// .Orderitem-box div {
+//   flex-grow: 0.5;
+// }
+
+// .icon-not {
+//   font-size: 30px;
+// }
+
+// @mixin namehe {
+//   @include media(sm) {
+//   display:none;
+//   }
+// }
+
+
+// .header-nav {
+//     width: 100%;
+//     display: inline-block;
+// }
+
+// .header-text {
+//     width: 200px;
+//     height: auto;
+//     align-items: center;
+
+//     .title {
+//         position: absolute;
+//         left: 10%;
+//         font-size: 25px;
+//         font-family: $titles2he-font;
+//         top: -1.5%;
+//         color: $che-yellow;
+//         font-weight: 50;
+//     }
+
+//     .rol-text {
+//         margin-top: -25%;
+//         margin-left: 68%;
+//         color: white;
+//         font-weight: 5;
+//         font-family: $titles1he-font;
+//         @include mediahe(md) {
+//             margin-left: 52%;
+//           }
+//     }
+// }
+
+
+// .menu {
+//     margin-top: -70px;
+//     padding: 2px;
+//     font-size: 35px;
+//     position: relative;
+//     float: right;
+//     color: white;
+//     margin-right: 80px;
+//     cursor: pointer;
+
+//     &:hover {
+//         background-color: #25252588;
+//         border-radius: 2px;
+//         transform: scale(1.1);
+//     }
+// }
+
+// ul.ul-menu {
+//     box-sizing: border-box;
+//     display: none;
+//     position: relative;
+//     float: right;
+//     width: 130px;
+//     margin-left: -90%;
+//     padding-left: 0px;
+//     background-color: rgba(0, 0, 0, 0.541);
+//     background-color: $che-green;
+//     transition: all .3s ease-in;
+//     z-index: 1000;
+
+//     a {
+//         color: $che-bg;
+//         text-decoration: none;
+//         font-family: $contenthe-font;
+//         text-align: center;
+//     }
+// }
+
+// .li-menu {
+//     display: block;
+//     margin: 0;
+//     padding: 10px;
+//     list-style: none;
+//     border-bottom: 3px solid $che-bg;
+
+//     &:hover {
+//         background-color: rgba(73, 72, 72, 0.541);
+//         cursor: pointer;
+//     }
+// }
+
+// input:checked~.ul-menu {
+//     display: block;
+// }
+
+// #menu {
+//     display: none;
+// }
+
+// .logo {
+//     float: left;
+//     margin-top: 1.5%;
+// }
+
+// .orders-alert {
+//     position: absolute;
+//     left: 78.65%;
+//     right: 11.64%;
+//     top:2%;
+//     bottom: 26.55%;
+//     cursor: pointer;
+// }
+
+// .pending-order {
+//     position: absolute;
+//     left: 25.07%;
+//     top: 3%;
+//     width: 22px;
+//     height: 22px;
+//     background-color: $che-yellow;
+//     border-radius: 50%;
+//     text-align: center;
+//     font-family: $titles1he-font;
+//     color: $che-bg;
+//     @include mediahe(md) {
+//         top: 2.8%;
+//         left: 32.07%;
+//       }
+//     &:hover {
+//         transform: scale(1.1);
+//     }
+// }
+
+// .waiter-alert {
+//     float: left;
+// }
+
+// .header-nav {
+//     width: 100vw;
+//     height: auto;
+// }
+
+// .header-item {
+//     margin-left: 20px;
+//     height: 100px;
+// }

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
-import "./modal.scss";
+//import "../../sass/modal.scss";
 
 function Modal({ children, open, close }) {
   if (!open) return null;

@@ -3,7 +3,7 @@ import Button from "../../components/primaryButton.jsx";
 import { Link } from "react-router-dom";
 import Bqueen from "../../assets/logoBQ.png";
 import { DeviceMesssagePhone } from "../../components/deviceMessage.jsx"
-import "./home.scss";
+//import "../../sass/home.scss";
 
 function Home() {
   return (
@@ -12,7 +12,7 @@ function Home() {
         <img className="home-img" src={Bqueen} alt="home" />
         <Link to="/rol">
           <div className="btn-init">
-            <Button id="start" label="START" />
+            <Button id="start" label="Iniciar" />
           </div>
         </Link>
       </div>

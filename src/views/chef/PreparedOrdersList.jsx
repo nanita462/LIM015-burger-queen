@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import UseOrdersDone from "./UseOrdersDone.jsx";
 
-import "../modal/preparedModal.scss";
+//import "../modal/preparedModal.scss";
 import { firestore } from "../../firebase/config";
 
 const PreparedOrdersList = () => {
@@ -34,7 +34,7 @@ const PreparedOrdersList = () => {
                 orderStateAsDelivered(order.orderId);
               }}
             >
-              Delivered
+              Entregado
             </button>
           </li>
         ))}

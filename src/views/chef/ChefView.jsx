@@ -2,7 +2,7 @@ import React from "react";
 import PendingOrders from "./PendingOrdersList.jsx";
 import DoneOrders from "./DoneOrdersList.jsx";
 import HeaderChef from "../../components/HeaderChef.jsx";
-import "./chefViewStyles.scss";
+//import "../../sass/chefViewStyles.scss";
 
 const ChefView = () => {
   const [component, setComponent] = React.useState("pending");

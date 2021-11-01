@@ -1,5 +1,5 @@
 import React from "react";
-import "../views/waiter/waiter.scss";
+//import "../sass/waiter";
 
 function OrderItem(props) {
   return (

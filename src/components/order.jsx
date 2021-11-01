@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from "react";
 import Button from "./primaryButton.jsx";
-import OrderItem from "./orderItem.jsx";
+import OrderItem from "./OrderItem.jsx";
 //import { Notify, NotifyErrorInput, NotifyErrorOrder } from "./notification.jsx";
 //import { ToastContainer } from "react-toastify";
 import Input from "./inputs.jsx";
@@ -73,25 +73,25 @@ function Order(props) {
   return (
     <Fragment >
       <div data-testid="order-comp">
-        <h2 className="title-menu">ORDER</h2>
+        <h2 className="title-menu">Orden</h2>
         <div className="menu-inputs">
           <Input
-            label="CUSTOMER:"
+            label="Cliente:"
             className="customer"
             value={customerName}
             handleChange={(e) => setCustomerName(e.target.value)}
           />
           <Input
-            label="TABLE:"
+            label="Mesa:"
             className="table"
             value={tableNumber}
             handleChange={(e) => setTableNumber(e.target.value)}
           />
         </div>
         <div className="menu-order-title">
-          <h3>Qty </h3>
-          <h3>Product</h3>
-          <h3>Price</h3>
+          <h3>Cant. </h3>
+          <h3>Producto</h3>
+          <h3>Precio</h3>
         </div>
         <div className="tab-order">
           {resumen.map((item, index) => {
@@ -115,8 +115,8 @@ function Order(props) {
           </h3>
         </div>
         <div className="menu-order-btns">
-          <Button onClick={props.onClick} class="cancel-btn" label="CANCEL" />
-          <Button data-testid="send-order" class="send-btn" label="SEND" onClick={sendOrder} />
+          <Button onClick={props.onClick} class="cancel-btn" label="Cancelar" />
+          <Button data-testid="send-order" class="send-btn" label="Enviar" onClick={sendOrder} />
           {/* <ToastContainer /> */}
         </div>
       </div>

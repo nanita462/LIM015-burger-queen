@@ -1,0 +1,29 @@
+$blackmo : #2C2C2C;
+$orangemo :#D4804C;
+$yellowmo : #FFD195;
+$greenmo : #5D9B84;
+$whitemo : #FFFFFF;
+$greymo : #C4C4C4;
+$titles1mo-font : 'Anton', sans-serif;
+$titles2mo-font : Vast Shadow;
+$contentmo-font : Handlee;
+
+.cancelWarning {
+    font-family: $contentmo-font;
+    color: $whitemo;
+    justify-content: center;
+    width: 350px;
+
+}
+
+.confirm {
+    margin: auto;
+    float: center;
+    width: 80%;
+    background-color: $greenmo;
+    height: 40px;
+    margin: 10px 0;
+    font-weight: heavy;
+    font-family: $titles1mo-font;
+}
+

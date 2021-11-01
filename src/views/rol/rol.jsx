@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import waiter from "../../assets/mesero.png";
 import chef from "../../assets/chef.png";
 import { DeviceMesssagePhone } from "../../components/deviceMessage";
-import "./rol.scss";
+//import "../../sass/rol.scss";
 
 function Rol() {
   return (

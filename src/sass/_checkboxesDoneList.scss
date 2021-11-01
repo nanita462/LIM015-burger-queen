@@ -1,0 +1,100 @@
+$blackcd : #2C2C2C;
+$orangecd :#D4804C;
+$yellowcd : #FFD195;
+$greencd : #5D9B84;
+$whitecd : #FFFFFF;
+$greycd : #C4C4C4;
+$titles1cd-font : 'Anton', sans-serif;
+$titles2cd-font : Vast Shadow;
+$contentcd-font : Handlee;
+
+
+.checkBoxDoneList { 
+
+    grid-column-start: 1;
+    grid-column-end: 21;
+    grid-row-start: 6;
+    grid-row-end: 18;
+    list-style: none;
+    margin: 0;
+    padding : 0;
+    font-family: $contentcd-font;
+    overflow-y: scroll;
+    height: 65%;
+    
+
+    .checkboxItem {
+        margin: 0;
+        padding : 0;
+        
+        
+        
+        
+        
+        
+        
+
+        .labelCheckbox {
+            margin: 0;
+            padding : 0;
+            display: grid;
+            grid-template-columns: 10% 7% 30% 48% 5%;
+            
+            
+
+            .checkboxFigure {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                opacity: 0;
+
+
+            }
+
+            .customDoneCheckbox {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                background-color: $greencd;
+                border: solid 2px $greycd;
+                height: 22px;
+                width: 22px;
+                border-radius: 5px;
+                margin: auto;
+                
+
+
+            }
+
+            .checkboxFigure:checked ~ .customCheckbox {
+                background-color: $greencd;
+                border-radius: 5px;
+                opacity: 2;
+                border: 2px solid $greencd;
+                
+
+            } 
+
+            .productQuantity {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                margin: auto;
+                font-size: 25px;
+            }
+
+            .productName {
+                grid-column-start: 4;
+                grid-column-end: 7;
+                margin: auto 0;
+                font-size: 25px;
+
+            }
+
+
+
+        }
+
+              
+        
+    }
+
+
+}

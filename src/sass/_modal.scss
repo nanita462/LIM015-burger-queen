@@ -1,0 +1,123 @@
+// // Main styles
+// @import url('https://fonts.googleapis.com/css2?family=Anton&family=Handlee&family=Vast+Shadow&display=swap');
+
+// //Color variables
+// $c-bg:#1d1d1d;
+// $c-yellow:#FD9301;
+// $c-ligthBrown:#FFD195;
+// $c-darkBrown:#D4804C;
+// $c-red:#E04F4F;
+// $c-green:#5D9B84;
+
+// //Font variables
+// $titles1-font : 'Anton',
+// sans-serif;
+// $titles2-font : 'Vast Shadow',
+// cursive;
+// $content-font : 'Handlee',
+// cursive;
+
+// // media
+// $breakpoint-xs: 360px;
+// $breakpoint-sm: 768px;
+// $breakpoint-md: 1024px;
+// $breakpoint-lg: 1360px;
+
+// @mixin media($media) {
+//   @if $media == xs {
+//     @media (max-width: $breakpoint-sm) { @content; }
+//   }
+//   @else if $media == sm {
+//     @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
+//   }
+//   @else if $media == md {
+//     @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
+//   }
+// }
+
+// body {
+//   background: $c-bg;
+//   height: 100vh;
+//   width: 100vw;
+//   overflow: hidden;
+// }
+
+// @mixin subtitles-fontStyle {
+//   color: $c-darkBrown;
+//   font-size: 40px;
+//   font-family: $titles1-font ;
+// }
+
+// @mixin button-primary {
+//   font-family: $titles1-font ;
+//   border: none;
+//   font-size: 30px;
+//   color: $c-bg;
+//   outline: none;
+//   cursor: pointer;
+// }
+
+// // @mixin compact {
+// //   @media (max-width: #{$breakpoint}) {
+// //       @content;
+// //   }
+// // }
+
+// p.item-product {
+//   width: 150px;
+// }
+
+// img.icons {
+//   width: 25px;
+//   cursor: pointer;
+//   margin: 3px;
+// }
+
+// .Orderitem-box div {
+//   flex-grow: 0.5;
+// }
+
+// .icon-not {
+//   font-size: 30px;
+// }
+
+// @mixin name {
+//   @include media(sm) {
+//   display:none;
+//   }
+// }
+
+// .overlay{
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(0, 0, 0, .7);
+//   z-index: 100;
+// }
+// .modal-container{
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   background-color:$c-bg;
+//   border-radius:10px;
+//   padding: 30px;
+//   z-index: 300;
+// }
+// .close-modal{
+//   font-weight: 600;
+//   color: white;
+//   float: right;
+//   font-family: 'Handlee';
+//   cursor: pointer;
+//   width: 20px;
+//   height: 20px;
+//   text-align: center;
+//   &:hover{
+//     background-color:#31313188;
+//     border-radius:2px;
+//     transform:scale(1.1);
+//   }
+// }

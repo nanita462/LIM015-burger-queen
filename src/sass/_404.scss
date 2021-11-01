@@ -1,0 +1,146 @@
+// Main styles
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Handlee&family=Vast+Shadow&display=swap');
+
+//Color variables
+$c-bg4:#1d1d1d;
+$c-yellow4:#FD9301;
+$c-ligthBrown4:#FFD195;
+$c-darkBrown4:#D4804C;
+$c-red4:#E04F4F;
+$c-green4:#5D9B84;
+
+//Font variables
+$titles1-font4 : 'Anton',
+sans-serif;
+$titles2-font4 : 'Vast Shadow',
+cursive;
+$content-font4 : 'Handlee',
+cursive;
+
+// media
+$breakpoint-xs4: 360px;
+$breakpoint-sm4: 768px;
+$breakpoint-md4: 1024px;
+$breakpoint-lg4: 1360px;
+
+@mixin media4($media) {
+  @if $media == xs {
+    @media (max-width: $breakpoint-sm) { @content; }
+  }
+  @else if $media == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
+  }
+  @else if $media == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
+  }
+}
+
+body {
+  background: $c-bg;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@mixin subtitles-fontStyle4 {
+  color: $c-darkBrown;
+  font-size: 40px;
+  font-family: $titles1-font ;
+}
+
+@mixin button-primary4 {
+  font-family: $titles1-font ;
+  border: none;
+  font-size: 30px;
+  color: $c-bg;
+  outline: none;
+  cursor: pointer;
+}
+
+// @mixin compact {
+//   @media (max-width: #{$breakpoint}) {
+//       @content;
+//   }
+// }
+
+p.item-product {
+  width: 150px;
+}
+
+img.icons {
+  width: 25px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.Orderitem-box div {
+  flex-grow: 0.5;
+}
+
+.icon-not {
+  font-size: 30px;
+}
+
+@mixin name {
+  @include media4(sm) {
+  display:none;
+  }
+}
+
+
+.not-found {
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.not-found-img-cont {
+    .not-found-img {
+        width:65%;
+        height: auto;
+        margin-top: -30%;
+        float: right;
+        z-index: -1000;
+        @include media4(md) {
+            margin-top: -48%;
+            margin-bottom: -15%;
+            width:85%;
+        }
+    }
+
+}
+
+.not-found-message {
+    margin-top: 35%;
+    text-align: center;
+    font-family: $titles1-font4;
+    font-weight: 20;
+    color: white;
+    font-size: 25px;
+    z-index: 1000;
+
+    @include media4(md) {
+        margin-top: 55%;
+
+        p,
+        .message-first-line {
+            clear: both;
+        }
+    }
+
+    span,
+    a,
+    .not-found-home {
+        text-decoration: none;
+        outline: none;
+        font-family: $titles1-font;
+        font-size: 30px;
+        color: $c-yellow;
+        text-decoration: none;
+
+        &:hover {
+            color: #be7104;
+        }
+    }
+}
