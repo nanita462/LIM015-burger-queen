@@ -1,88 +1,100 @@
-// Main styles
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Handlee&family=Vast+Shadow&display=swap');
+// body {
+//   margin: 0;
+//   padding:0px;
+//   background-image: url(assets/hamburguesitas.png);
+//   background-repeat: no-repeat;
+//   background-size: cover;
 
-//Color variables
-$c-bg:#1d1d1d;
-$c-yellow:#FD9301;
-$c-ligthBrown:#FFD195;
-$c-darkBrown:#D4804C;
-$c-red:#E04F4F;
-$c-green:#5D9B84;
+//   font-family: 'Signika Negative', sans-serif;
+//   color: #ffffff;
+// }
 
-//Font variables
-$titles1-font : 'Anton',
-sans-serif;
-$titles2-font : 'Vast Shadow',
-cursive;
-$content-font : 'Handlee',
-cursive;
 
-// media
-$breakpoint-xs: 360px;
-$breakpoint-sm: 768px;
-$breakpoint-md: 1024px;
-$breakpoint-lg: 1360px;
+// // Main styles
+// @import url('https://fonts.googleapis.com/css2?family=Anton&family=Handlee&family=Vast+Shadow&display=swap');
 
-@mixin media($media) {
-  @if $media == xs {
-    @media (max-width: $breakpoint-sm) { @content; }
-  }
-  @else if $media == sm {
-    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
-  }
-  @else if $media == md {
-    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
-  }
-}
+// //Color variables
+// $c-bg:#1d1d1d;
+// $c-yellow:#FD9301;
+// $c-ligthBrown:#FFD195;
+// $c-darkBrown:#D4804C;
+// $c-red:#E04F4F;
+// $c-green:#5D9B84;
 
-body {
-  background: $c-bg;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
+// //Font variables
+// $titles1-font : 'Anton',
+// sans-serif;
+// $titles2-font : 'Vast Shadow',
+// cursive;
+// $content-font : 'Handlee',
+// cursive;
 
-@mixin subtitles-fontStyle {
-  color: $c-darkBrown;
-  font-size: 40px;
-  font-family: $titles1-font ;
-}
+// // media
+// $breakpoint-xs: 360px;
+// $breakpoint-sm: 768px;
+// $breakpoint-md: 1024px;
+// $breakpoint-lg: 1360px;
 
-@mixin button-primary {
-  font-family: $titles1-font ;
-  border: none;
-  font-size: 30px;
-  color: $c-bg;
-  outline: none;
-  cursor: pointer;
-}
-
-// @mixin compact {
-//   @media (max-width: #{$breakpoint}) {
-//       @content;
+// @mixin media($media) {
+//   @if $media == xs {
+//     @media (max-width: $breakpoint-sm) { @content; }
+//   }
+//   @else if $media == sm {
+//     @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
+//   }
+//   @else if $media == md {
+//     @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
 //   }
 // }
 
-p.item-product {
-  width: 150px;
-}
+// body {
+//   background: $c-bg;
+//   height: 100vh;
+//   width: 100vw;
+//   overflow: hidden;
+// }
 
-img.icons {
-  width: 25px;
-  cursor: pointer;
-  margin: 3px;
-}
+// @mixin subtitles-fontStyle {
+//   color: $c-darkBrown;
+//   font-size: 40px;
+//   font-family: $titles1-font ;
+// }
 
-.Orderitem-box div {
-  flex-grow: 0.5;
-}
+// @mixin button-primary {
+//   font-family: $titles1-font ;
+//   border: none;
+//   font-size: 30px;
+//   color: $c-bg;
+//   outline: none;
+//   cursor: pointer;
+// }
 
-.icon-not {
-  font-size: 30px;
-}
+// // @mixin compact {
+// //   @media (max-width: #{$breakpoint}) {
+// //       @content;
+// //   }
+// // }
 
-@mixin name {
-  @include media(sm) {
-  display:none;
-  }
-}
+// p.item-product {
+//   width: 150px;
+// }
+
+// img.icons {
+//   width: 25px;
+//   cursor: pointer;
+//   margin: 3px;
+// }
+
+// .Orderitem-box div {
+//   flex-grow: 0.5;
+// }
+
+// .icon-not {
+//   font-size: 30px;
+// }
+
+// @mixin name {
+//   @include media(sm) {
+//   display:none;
+//   }
+// }

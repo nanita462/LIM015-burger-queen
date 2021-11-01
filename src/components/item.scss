@@ -1,29 +1,29 @@
-@import '../router/App.scss';
+// @import '../router/App.scss';
 
-.item-box {
-    background-color: $c-ligthBrown;
-    color: black;
-    font-family: $content-font;
-    width: 100%;
-    height: 65px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    &:hover {
-        transform: translateY(-2px);
-    }
-    @include media(md) {
-        width: 85%;
-      }
-}
+// .item-box {
+//     background-color: $c-ligthBrown;
+//     color: black;
+//     font-family: $content-font;
+//     width: 100%;
+//     height: 65px;
+//     border-radius: 10px;
+//     margin-bottom: 10px;
+//     padding-left: 10px;
+//     padding-right: 20px;
+//     text-transform: uppercase;
+//     cursor: pointer;
+//     &:hover {
+//         transform: translateY(-2px);
+//     }
+//     @include media(md) {
+//         width: 85%;
+//       }
+// }
 
-.text-left {
-    float: left;
-}
+// .text-left {
+//     float: left;
+// }
 
-.text-right {
-    float: right;
-}
+// .text-right {
+//     float: right;
+// }

@@ -26,7 +26,7 @@ function HeaderChef(props) {
             &#x2630;
           </label>
           <ul className="ul-menu">
-            <Link to="/rol">
+            <Link to="/user">
               <li className="li-menu">Rol</li>
             </Link>
             <Link to="/">
