@@ -9,6 +9,7 @@ import ModalContent from "../modal/modalContent.jsx";
 import { DeviceMesssagePhone } from "../../components/deviceMessage";
 //import { NotifyErrorCanceled } from "../../components/notification.jsx";
 //import { ToastContainer } from "react-toastify";
+//import '../../build/css/index.css'; // para aplicar estilo sass
 
 function WaiterView() {
   const [menu, setMenu] = useState("Desayuno");

@@ -1,58 +1,58 @@
-@import '../../router/App.scss';
+// @import '../../router/App.scss';
 
-.not-found {
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-}
+// .not-found {
+//     align-items: center;
+//     justify-content: center;
+//     width: 100vw;
+//     height: 100vh;
+// }
 
-.not-found-img-cont {
-    .not-found-img {
-        width:65%;
-        height: auto;
-        margin-top: -30%;
-        float: right;
-        z-index: -1000;
-        @include media(md) {
-            margin-top: -48%;
-            margin-bottom: -15%;
-            width:85%;
-        }
-    }
+// .not-found-img-cont {
+//     .not-found-img {
+//         width:65%;
+//         height: auto;
+//         margin-top: -30%;
+//         float: right;
+//         z-index: -1000;
+//         @include media(md) {
+//             margin-top: -48%;
+//             margin-bottom: -15%;
+//             width:85%;
+//         }
+//     }
 
-}
+// }
 
-.not-found-message {
-    margin-top: 35%;
-    text-align: center;
-    font-family: $titles1-font;
-    font-weight: 20;
-    color: white;
-    font-size: 25px;
-    z-index: 1000;
+// .not-found-message {
+//     margin-top: 35%;
+//     text-align: center;
+//     font-family: $titles1-font;
+//     font-weight: 20;
+//     color: white;
+//     font-size: 25px;
+//     z-index: 1000;
 
-    @include media(md) {
-        margin-top: 55%;
+//     @include media(md) {
+//         margin-top: 55%;
 
-        p,
-        .message-first-line {
-            clear: both;
-        }
-    }
+//         p,
+//         .message-first-line {
+//             clear: both;
+//         }
+//     }
 
-    span,
-    a,
-    .not-found-home {
-        text-decoration: none;
-        outline: none;
-        font-family: $titles1-font;
-        font-size: 30px;
-        color: $c-yellow;
-        text-decoration: none;
+//     span,
+//     a,
+//     .not-found-home {
+//         text-decoration: none;
+//         outline: none;
+//         font-family: $titles1-font;
+//         font-size: 30px;
+//         color: $c-yellow;
+//         text-decoration: none;
 
-        &:hover {
-            color: #be7104;
-        }
-    }
-}
+//         &:hover {
+//             color: #be7104;
+//         }
+//     }
+// }

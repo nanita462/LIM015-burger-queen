@@ -1,45 +1,44 @@
+$colorO: #FF4300;
+$colorW: #ffffff;
+
 .secInit{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 .logo {
 width: 25%;
 height: 25%;
 margin:3% 0% 3% 0%
 }
 
-.btnInit{
-    background-color: #FF4300;
-    border-radius: 25px;
-    border: none;
-    height: 100px;
-    width: 250px;
-    color: white;
-    font-size: 60px;
+.btnInit>button{
+    background-color: $colorO;
+    color: $colorW;
     font-weight: bold;
     cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    height: 100px;
+    width: 250px;
+    font-size: 60px;
+
 }
 
 //ipad horizontal
-@media  screen and  (min-height: 768px)  {
+@media  screen and  (min-height: 760px)  {
     @media  screen and  (min-width: 1024px)  {
         .logo {
             width: 380px;
             height: 480px;
             margin:55px 0px 35px 0px
             }
-
-        .btnInit{
-            background-color: #FF4300;
+            .btnInit>button{
             border-radius: 25px;
-            border: none;
             height: 95px;
             width: 240px;
-            color: white;
             font-size: 60px;
-            font-weight: bold;
-            cursor: pointer;
         }
     }
  }

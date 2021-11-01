@@ -3,34 +3,35 @@ import Button from "../../components/primaryButton.jsx";
 import { Link } from "react-router-dom";
 import waiter from "../../assets/mesero.png";
 import chef from "../../assets/chef.png";
-import { DeviceMesssagePhone } from "../../components/deviceMessage";
-import "./rol.scss";
+//import { DeviceMesssagePhone } from "../../components/deviceMessage";
+import '../../build/css/index.css'; // para aplicar estilo sass
 
 function Rol() {
   return (
-    <div className="rol-container">
-      <div className="rol-box">
-        <div className="waiter-out">
+    <>
+      <section className="container__User">
+
+        <section className="rol_Waiter">
+          <img className="img_Waiter" src={waiter} alt="waiter" />
           <Link to="/waiterOrder">
-            <Button label="WAITER" />
+            <section className="btn__Waiter">
+              <Button label="Mesero" />
+            </section>
           </Link>
-          <div className="waiter-inner">
-            <img src={waiter} alt="waiter" />
-          </div>
-        </div>
-        <div>
-          <div className="chef-out">
-            <Link to="/chefOrder">
-              <Button label="CHEF" />
-            </Link>
-          </div>
-          <div className="chef-inner">
-            <img src={chef} alt="chef" />
-          </div>
-        </div>
-      </div>
-      <DeviceMesssagePhone />
-    </div>
+        </section>
+
+        <section className="rol_Chef">
+          <img className="img_Chef" src={chef} alt="chef" />
+          <Link to="/chefOrder">
+            <section className="btn__Chef">
+              <Button label="Chef" />
+            </section>
+          </Link>
+        </section>
+
+      </section>
+      {/* <DeviceMesssagePhone /> */}
+    </>
   );
 }
 
