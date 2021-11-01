@@ -15,3 +15,96 @@ body::before {
   border-bottom: 2px solid black;
   content: "Error: Can't find stylesheet to import.\a   \2577 \a 9 \2502  @forward 'checkViewStyles.scss';\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\sass\\index.scss 9:1  root stylesheet";
 }
+<<<<<<< HEAD
+=======
+
+.logo {
+  width: 25%;
+  height: 25%;
+  margin: 3% 0% 3% 0%;
+}
+
+.btnInit > button {
+  background-color: #FF4300;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  height: 100px;
+  width: 250px;
+  font-size: 60px;
+}
+
+@media screen and (min-height: 760px) and (min-width: 1024px) {
+  .logo {
+    width: 380px;
+    height: 480px;
+    margin: 55px 0px 35px 0px;
+  }
+
+  .btnInit > button {
+    border-radius: 25px;
+    height: 95px;
+    width: 240px;
+    font-size: 60px;
+  }
+}
+.container__User {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2%;
+}
+
+.rol_Waiter, .rol_Chef {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2% 0% 2% 0%;
+}
+
+.img_Waiter, .img_Chef {
+  width: 80%;
+  height: 80%;
+}
+
+.btn__Waiter > button, .btn__Chef > button {
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  font-size: 40px;
+  width: 200px;
+  height: 80px;
+}
+
+.btn__Waiter > button {
+  background-color: #BF720E;
+  color: #ffffff;
+}
+
+.btn__Chef > button {
+  background-color: #558C03;
+  color: #ffffff;
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .rol_Waiter, .rol_Chef {
+    margin: 25% 0% 0% 0%;
+  }
+
+  .img_Waiter, .img_Chef {
+    width: 350px;
+    height: 350px;
+  }
+
+  .btn__Waiter > button, .btn__Chef > button {
+    border-radius: 20px;
+    font-size: 40px;
+    width: 200px;
+    height: 80px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
+>>>>>>> 41c3d3f8d985ab25692098f1e37c1129778f7690

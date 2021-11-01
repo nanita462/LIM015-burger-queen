@@ -1,92 +1,67 @@
-// // Main styles
-// @import url('https://fonts.googleapis.com/css2?family=Anton&family=Handlee&family=Vast+Shadow&display=swap');
+// .header_nav {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 100%;
+//     padding-top: 1.5%;
+//     padding-left: 2.5%;
+// }
 
-// //Color variables
-// $che-bg:#1d1d1d;
-// $che-yellow:#FD9301;
-// $che-ligthBrown:#FFD195;
-// $che-darkBrown:#D4804C;
-// $che-red:#E04F4F;
-// $che-green:#5D9B84;
+// .littleLogo{
+//     width: 50px;
+//     height: 70px;
+// }
 
-// //Font variables
-// $titles1he-font : 'Anton',
-// sans-serif;
-// $titles2he-font : 'Vast Shadow',
-// cursive;
-// $contenthe-font : 'Handlee',
-// cursive;
+// .header_nameRol{
+//     display: flex;
+//     justify-content: center;
+// }
 
-// // media
-// $breakpointhe-xs: 360px;
-// $breakpointhe-sm: 768px;
-// $breakpointhe-md: 1024px;
-// $breakpointhe-lg: 1360px;
-
-// @mixin mediahe($media) {
-//   @if $media == xs {
-//     @media (max-width: $breakpointhe-sm) { @content; }
+// .header_nameRol a{
+//     text-decoration: none;
+//     color: #ffffff;
+//     font-size: 30px;
+//     padding: 20px 0px 0px 10px;
 //   }
-//   @else if $media == sm {
-//     @media (min-width: $breakpointhe-sm) and (max-width: $breakpointhe-md) { @content; }
+
+// .nav a{
+//     display: flex;
+//     float: left;
+//     justify-content: space-between;
+//     color: white;
+//     text-decoration: none;
 //   }
-//   @else if $media == md {
-//     @media (min-width: $breakpointhe-md) and (max-width: $breakpointhe-lg) { @content; }
+  
+//   .nav a:hover {
+//     color: #FF4300;
 //   }
+
+// //ipad horizontal
+// @media  screen and  (min-height: 768px)  {
+//     @media  screen and  (min-width: 1024px)  {
+//         .littleLogo{
+//             width: 70px;
+//             height: 90px;
+//         }
+//         .header_nameRol a{
+//             font-size: 35px;
+//             padding: 30px 0px 0px 10px;
+//         }
+//         .nav a{
+//             padding: 34px 30px 0px 0px;
+//             font-size: 30px;
+//         }
+//         .fas {
+//             padding-right: 5px;
+//         }
+//         .fa-bell{
+//             font-size:10px;
+//             margin: 0px;
+//             margin-bottom: 30px;
+//         }
+//     }
 // }
 
-// body {
-//   background: $che-bg;
-//   height: 100vh;
-//   width: 100vw;
-//   overflow: hidden;
-// }
-
-// @mixin subtitleshe-fontStyle {
-//   color: $che-darkBrown;
-//   font-size: 40px;
-//   font-family: $titles1he-font ;
-// }
-
-// @mixin buttonhe-primary {
-//   font-family: $titles1he-font ;
-//   border: none;
-//   font-size: 30px;
-//   color: $c-bg;
-//   outline: none;
-//   cursor: pointer;
-// }
-
-// // @mixin compact {
-// //   @media (max-width: #{$breakpoint}) {
-// //       @content;
-// //   }
-// // }
-
-// p.item-product {
-//   width: 150px;
-// }
-
-// img.icons {
-//   width: 25px;
-//   cursor: pointer;
-//   margin: 3px;
-// }
-
-// .Orderitem-box div {
-//   flex-grow: 0.5;
-// }
-
-// .icon-not {
-//   font-size: 30px;
-// }
-
-// @mixin namehe {
-//   @include media(sm) {
-//   display:none;
-//   }
-// }
-
+// @import '../router/App.scss';
 
 // .header-nav {
 //     width: 100%;
@@ -102,9 +77,9 @@
 //         position: absolute;
 //         left: 10%;
 //         font-size: 25px;
-//         font-family: $titles2he-font;
+//         font-family: $titles2-font;
 //         top: -1.5%;
-//         color: $che-yellow;
+//         color: $c-yellow;
 //         font-weight: 50;
 //     }
 
@@ -113,8 +88,8 @@
 //         margin-left: 68%;
 //         color: white;
 //         font-weight: 5;
-//         font-family: $titles1he-font;
-//         @include mediahe(md) {
+//         font-family: $titles1-font;
+//         @include media(md) {
 //             margin-left: 52%;
 //           }
 //     }
@@ -147,14 +122,14 @@
 //     margin-left: -90%;
 //     padding-left: 0px;
 //     background-color: rgba(0, 0, 0, 0.541);
-//     background-color: $che-green;
+//     background-color: $c-green;
 //     transition: all .3s ease-in;
 //     z-index: 1000;
 
 //     a {
-//         color: $che-bg;
+//         color: $c-bg;
 //         text-decoration: none;
-//         font-family: $contenthe-font;
+//         font-family: $content-font;
 //         text-align: center;
 //     }
 // }
@@ -164,7 +139,7 @@
 //     margin: 0;
 //     padding: 10px;
 //     list-style: none;
-//     border-bottom: 3px solid $che-bg;
+//     border-bottom: 3px solid $c-bg;
 
 //     &:hover {
 //         background-color: rgba(73, 72, 72, 0.541);
@@ -200,12 +175,12 @@
 //     top: 3%;
 //     width: 22px;
 //     height: 22px;
-//     background-color: $che-yellow;
+//     background-color: $c-yellow;
 //     border-radius: 50%;
 //     text-align: center;
-//     font-family: $titles1he-font;
-//     color: $che-bg;
-//     @include mediahe(md) {
+//     font-family: $titles1-font;
+//     color: $c-bg;
+//     @include media(md) {
 //         top: 2.8%;
 //         left: 32.07%;
 //       }

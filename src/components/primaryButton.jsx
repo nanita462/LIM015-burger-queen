@@ -2,9 +2,9 @@ import React from "react";
 
 function Button(props) {
   return (
-    <button className={props.class} onClick={props.onClick} id={props.id}>
+    <button className={props.class} onClick={props.onClick} id={props.id} >
       {props.label}
-    </button>
+    </button >
   );
 }
 export default Button;
