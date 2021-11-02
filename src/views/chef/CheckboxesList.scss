@@ -1,0 +1,18 @@
+.checkBoxList{
+    list-style: none;
+}
+
+.labelCheckbox{
+    display: grid;
+    grid-template-columns: 0fr 1fr 1fr 2fr;
+    column-gap: 1%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.productName, .productQuantity{
+    padding-top: 0px;
+    margin-bottom: 5px;
+    padding-bottom: 1px;
+
+}

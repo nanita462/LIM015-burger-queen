@@ -1,0 +1,33 @@
+.menu-navigation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.title-btn{
+    color: #000000;
+    background-color: #C4C4C4;
+    cursor: pointer;
+}
+
+.title-btn:hover{
+    background-color:#FCB607;
+}
+
+
+@media  screen and  (min-height: 768px)  {
+    @media  screen and  (min-width: 1024px)  {
+        
+        .title-btn{   
+            border-radius: 25px;
+            border: none;
+            height: 50px;
+            width: 120px;
+            font-size: 23px;
+            margin: 0px 10px 0px 10px;
+            
+        }
+
+}
+}
+

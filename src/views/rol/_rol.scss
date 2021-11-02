@@ -1,0 +1,63 @@
+$color_primary: #BF720E;
+$color_secondary: #ffffff;
+$color_terciary: #558C03;
+
+.container__User{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
+}
+
+.rol_Waiter, .rol_Chef{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2% 0% 2% 0%;
+}
+
+.img_Waiter, .img_Chef  {
+    width: 80%;
+    height: 80%;
+}
+
+.btn__Waiter>button, .btn__Chef>button{
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-size: 40px;
+    width: 200px;
+    height: 80px;
+
+}
+
+.btn__Waiter>button{
+    background-color:$color_primary;
+    color: $color_secondary;
+}
+
+.btn__Chef>button{
+    background-color:$color_terciary;
+    color: $color_secondary;
+}
+
+@media  screen and  (min-height: 768px)  {
+    @media  screen and  (min-width: 1024px)  {
+        .rol_Waiter, .rol_Chef{
+            margin: 25% 0% 0% 0%;
+        }
+
+        .img_Waiter, .img_Chef  {
+            width: 350px;
+            height: 350px;
+        }
+
+        .btn__Waiter>button, .btn__Chef>button{
+            border-radius: 20px;
+            font-size: 40px;
+            width: 200px;
+            height: 80px;
+  
+        }
+    }
+}
