@@ -1,0 +1,40 @@
+.summaryOrderContainer{
+    border: solid 1px #ffffff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    padding: 20px;
+}
+
+.titlePendingOrder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    text-align: center;
+    
+}
+.titlePendingOrder>h3{
+    font-size: 20px;
+    
+}
+.btnForChefOrder{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px 10px 30px;
+}
+.cancelButtonForChef, .doneButtonForChef{
+    background-color: #C4C4C4;
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    width: 130px;
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+   
+    text-align: center;
+}
+.cancelButtonForChef:hover, .doneButtonForChef:hover{    
+        background-color: #558C03;
+    }

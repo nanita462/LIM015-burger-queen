@@ -3,25 +3,30 @@ import SingleOrderContext from "./SingleOrderContext.jsx";
 import CheckboxesList from "./CheckboxesList.jsx";
 import DoneButtonForChef from "./DoneButtonForChef.jsx";
 import CancelButtonForChef from "./CancelButtonForChef.jsx";
+import './SinglePendingOrderComponent.scss'
 
 const SinglePendingOrderComponent = () => {
   const [singleOrder,] = useContext(SingleOrderContext);
 
   return (
-    <div className="rectangle" id="rectangleContainer">
-      <div className="customerTitle"> Cliente: </div>
-      <div id="customerName"> {singleOrder.data.customer}</div>
-      <div className="tableTitle"> Mesa:</div>
-      <div id="tableNumber"> {singleOrder.data.table}</div>
-      <div className="entry">Hora ingreso:</div>
-      <div className="entryDateHour">{singleOrder.data.init_time} </div>
-      <div className="quantity">Cant.</div>
-      <div className="product">Producto</div>
-
+    <section className="summaryOrderContainer" id="rectangleContainer">
+      <section className="itemSummary">
+      <h2>Orden Pendiente</h2>
+      <p id="customerName"> Cliente: {singleOrder.data.customer}</p>
+      <p id="tableNumber">Mesa: {singleOrder.data.table}</p>
+      <p className="entryDateHour">Hora ingreso: {singleOrder.data.init_time} </p>
+      <section className='titlePendingOrder'>
+      <h3>Listo</h3>
+      <h3 className="quantity">Cant.</h3>
+      <h3 className="product">Producto</h3>
+      </section>
+      </section>
       <CheckboxesList />
+      <section className="btnForChefOrder">
       <CancelButtonForChef />
       <DoneButtonForChef />
-    </div>
+      </section>
+    </section>
   );
 };
 

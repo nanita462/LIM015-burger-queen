@@ -2,7 +2,7 @@ import React from "react";
 import PendingOrders from "./PendingOrdersList.jsx";
 import DoneOrders from "./DoneOrdersList.jsx";
 import HeaderChef from "../../components/HeaderChef.jsx";
-//import "../../sass/chefViewStyles.scss";
+import "./ChefView.scss";
 
 const ChefView = () => {
   const [component, setComponent] = React.useState("pending");
@@ -20,17 +20,17 @@ const ChefView = () => {
   };
 
   return (
-    <div id="chefViewContainer">
+    <section  id="chefViewContainer">
       <HeaderChef rol="chef" />
-      <div id="pendingOption" onClick={() => renderPendingView()}>
+      <button  id="pendingOption" onClick={() => renderPendingView()}>
         Pendiente
-      </div>
-      <div id="line"></div>
-      <div id="doneOption" onClick={() => renderDoneView()}>
+      </button>
+      <section id="line"></section>
+      <button id="doneOption" onClick={() => renderDoneView()}>
         Listo
-      </div>
+      </button>
       {component === "pending" ? <PendingOrders /> : <DoneOrders />}
-    </div>
+    </section>
   );
 };
 

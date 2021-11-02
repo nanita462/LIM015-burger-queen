@@ -1,6 +1,7 @@
 import React, { Fragment, useContext } from "react";
 import SingleOrderContext from "./SingleOrderContext.jsx";
 import { firestore } from "../../firebase/config";
+import './SinglePendingOrderComponent.scss'
 //import { ToastContainer, toast } from "react-toastify";
 //import "react-toastify/dist/ReactToastify.css";
 
@@ -36,7 +37,7 @@ const DoneButtonForChef = () => {
   };
 
   return (
-    <Fragment>
+    <>
       <button
         className="doneButtonForChef"
         onClick={() => {
@@ -46,7 +47,7 @@ const DoneButtonForChef = () => {
         Listos
       </button>
       {/* <ToastContainer /> */}
-    </Fragment>
+    </>
   );
 };
 

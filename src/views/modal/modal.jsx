@@ -1,21 +1,21 @@
 import React from "react";
 import ReactDom from "react-dom";
-//import "../../sass/modal.scss";
+import "./modal.scss";
 
 function Modal({ children, open, close }) {
   if (!open) return null;
 
   return ReactDom.createPortal(
     <>
-      <div className="overlay" />
-      <div className="modal-container">
-        <span className="close-modal" onClick={close}>
-          X
+      <section className="overlay" />
+      <section className="modal-container">
+        <span>
+        <i class= "close-modal fas fa-times-circle" onClick={close}></i>
         </span>
         {children}
-      </div>
+      </section>
     </>,
-    document.getElementById("portal")
+    document.getElementById("modalSection")
   );
 }
 

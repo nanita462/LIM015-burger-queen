@@ -1,24 +1,24 @@
 import React from "react";
-//import "../sass/waiter";
+import "./OrderItem.scss";
 
 function OrderItem(props) {
   return (
-    <div className="Orderitem-box">
-      <div className="cant">
+    <section className="orderItemContainer">
+      <section className="descriptionOrderItem">
         <p className="item-name">{props.quantity}</p>
-      </div>
-      <div className="product">
+      </section>
+      <section className="descriptionOrderItem">
         <p className="item-product">{props.product}</p>
-      </div>
-      <div className="price">
+      </section>
+      <section className="descriptionOrderItem">
         <p className="item-price">$ {props.newPrice}</p>
-      </div>
-      <section>
+      </section>
+      <section className='iconOrderItem'>
         <span><i onClick={props.addItem} className="fas fa-plus-circle"></i></span>
         <span><i onClick={props.restItem} className="fas fa-minus-circle"></i></span>
         <span><i onClick={props.deleteItem} className="fas fa-trash-alt"></i></span>
       </section>
-    </div>
+    </section>
   );
 }
 export default OrderItem;

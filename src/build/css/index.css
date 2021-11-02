@@ -1,22 +1,8 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 9 | @forward 'checkViewStyles.scss';
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   src\sass\index.scss 9:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 9 \2502  @forward 'checkViewStyles.scss';\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\sass\\index.scss 9:1  root stylesheet";
+.secInit {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-<<<<<<< HEAD
-=======
 
 .logo {
   width: 25%;
@@ -105,6 +91,10 @@ body::before {
     height: 80px;
   }
 }
+.waiterContainer {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 /*# sourceMappingURL=index.css.map */
->>>>>>> 41c3d3f8d985ab25692098f1e37c1129778f7690

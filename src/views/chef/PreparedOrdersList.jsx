@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import UseOrdersDone from "./UseOrdersDone.jsx";
 
 //import "../modal/preparedModal.scss";
@@ -20,7 +20,7 @@ const PreparedOrdersList = () => {
   };
 
   return (
-    <Fragment>
+    <>
       <ul className="ulPrepared">
         {currentPreparedOrdersList.map((order) => (
           <li className="preparedItems" key={order.orderId}>
@@ -39,7 +39,7 @@ const PreparedOrdersList = () => {
           </li>
         ))}
       </ul>
-    </Fragment>
+    </>
   );
 };
 

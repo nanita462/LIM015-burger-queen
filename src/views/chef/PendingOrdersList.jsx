@@ -1,8 +1,9 @@
-import React, { useState, Fragment } from "react";
+import React, { useState} from "react";
 import UseOrdersPending from "./UseOrdersPending.jsx";
 import SinglePendingOrderComponent from "./SinglePendingOrderComponent.jsx";
 import SingleOrderContext from "./SingleOrderContext.jsx";
 import DefaultMessage from "./DefaultMessage.jsx";
+import'./PendingOrderList.scss'
 
 const PendingOrders = () => {
   const currentOrdersList = UseOrdersPending();
@@ -15,14 +16,11 @@ const PendingOrders = () => {
   };
 
   return (
-    <Fragment>
+    <>
       <ul className="ulPending">
         {currentOrdersList.map((order) =>
 
         (
-
-
-
           <li
             className="pendingItem"
             key={order.orderId}
@@ -34,8 +32,8 @@ const PendingOrders = () => {
             onClick={() => currentActiveOrder(order)}
           >
 
-            <div> Customer: {order.data.customer} </div>
-            <div> Table : {order.data.table} </div>
+            <button className='description'> <h3>Customer: {order.data.customer}</h3> <h3>Table : {order.data.table}</h3> </button>
+            
           </li>
         ))}
       </ul>
@@ -46,12 +44,12 @@ const PendingOrders = () => {
         {singleOrderData === undefined ? (
           <DefaultMessage />
         ) : (
-          <Fragment>
+          <>
             <SinglePendingOrderComponent />{" "}
-          </Fragment>
+          </>
         )}
       </SingleOrderContext.Provider>
-    </Fragment>
+    </>
   );
 };
 

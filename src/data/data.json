@@ -2,13 +2,13 @@
 "Data" : [
     {
         "id": "b-01",
-        "product": "Cafe Americano",
+        "product": "Café Americano",
         "type": "Desayuno",
         "price": 5
     },
     {
         "id": "b-02",
-        "product": "Caffe con leche",
+        "product": "Café con leche",
         "type": "Desayuno",
         "price": 7
     },

@@ -1,20 +1,23 @@
 import React from 'react';
+import './navigationMenu.scss';
+
 
 function NavigationMenu(props) {
   return (
-    <nav className="menu-nav">
-      <ol>
-        <li className="title-nav" onClick={props.onBreakfast}>
+    
+    <section className="menu-navigation">
+      
+        <button className="title-btn" onClick={props.onBreakfast}>
           Desayuno
-        </li>
-        <li className="title-nav" onClick={props.onLunch}>
+        </button>
+        <button className="title-btn" onClick={props.onLunch}>
           De la casa
-        </li>
-        <li className="title-nav" onClick={props.onDrinks}>
+        </button>
+        <button className="title-btn" onClick={props.onDrinks}>
           Bebidas
-        </li>
-      </ol>
-    </nav>
+        </button>
+      
+    </section>
   )
 }
 

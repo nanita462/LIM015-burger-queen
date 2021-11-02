@@ -15,7 +15,7 @@ const DoneOrders = () => {
   };
 
   return (
-    <Fragment>
+    <>
       <ul className="ulDone">
         {currentDoneOrdersList.map((order) => (
           <li
@@ -43,7 +43,7 @@ const DoneOrders = () => {
           </Fragment>
         )}
       </SingleDoneOrderContext.Provider>
-    </Fragment>
+    </>
   );
 };
 

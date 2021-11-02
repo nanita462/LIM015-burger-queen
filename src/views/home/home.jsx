@@ -12,15 +12,9 @@ function Home() {
         <img src={logo} className="logo" alt="logoBQ" />
 
         <Link to="/rol">
-<<<<<<< HEAD
-          <div className="btn-init">
-            <Button id="start" label="Iniciar" />
-          </div>
-=======
           <section className="btnInit">
             <Button id="start" label="Iniciar" />
           </section>
->>>>>>> 41c3d3f8d985ab25692098f1e37c1129778f7690
         </Link>
 
       </section >

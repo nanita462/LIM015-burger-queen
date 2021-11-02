@@ -1,11 +1,11 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import Button from "./primaryButton.jsx";
 import OrderItem from "./OrderItem.jsx";
 //import { Notify, NotifyErrorInput, NotifyErrorOrder } from "./notification.jsx";
 //import { ToastContainer } from "react-toastify";
 import Input from "./inputs.jsx";
 import { firestore } from "../firebase/config";
-
+import './order.scss'
 function Order(props) {
   const [customerName, setCustomerName] = useState("");
   const [tableNumber, setTableNumber] = useState("");
@@ -71,29 +71,31 @@ function Order(props) {
   };
 
   return (
-    <Fragment >
-      <div data-testid="order-comp">
-        <h2 className="title-menu">Orden</h2>
-        <div className="menu-inputs">
+    <>
+      <section className="orderContainer" data-testid="order-comp">
+        <h2 className="titleOrder">Orden</h2>
+        <section className="menu-inputs">
           <Input
             label="Cliente:"
             className="customer"
+            placeh='Ingrese nombre del cliente'
             value={customerName}
             handleChange={(e) => setCustomerName(e.target.value)}
           />
           <Input
             label="Mesa:"
             className="table"
+            placeh='Número'
             value={tableNumber}
             handleChange={(e) => setTableNumber(e.target.value)}
           />
-        </div>
-        <div className="menu-order-title">
-          <h3>Cant. </h3>
-          <h3>Producto</h3>
-          <h3>Precio</h3>
-        </div>
-        <div className="tab-order">
+        </section>
+        <section className="orderTitleItem">
+          <h4>Cant.</h4>
+          <h4>Producto</h4>
+          <h4>Precio</h4>
+        </section>
+        <section className="tab-order">
           {resumen.map((item, index) => {
             return (
               <OrderItem
@@ -107,20 +109,20 @@ function Order(props) {
               />
             );
           })}
-        </div>
-        <div className="menu-total-order">
+        </section>
+        <section className="totalOrder">
           <h3>
-            TOTAL:$
+            TOTAL: $
             <span>{totalCustomer}</span>
           </h3>
-        </div>
-        <div className="menu-order-btns">
+        </section>
+        <section className="menu-order-btns">
           <Button onClick={props.onClick} class="cancel-btn" label="Cancelar" />
           <Button data-testid="send-order" class="send-btn" label="Enviar" onClick={sendOrder} />
           {/* <ToastContainer /> */}
-        </div>
-      </div>
-    </Fragment>
+        </section>
+      </section>
+    </>
   );
 }
 export default Order;

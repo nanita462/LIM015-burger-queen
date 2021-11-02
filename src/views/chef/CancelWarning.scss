@@ -1,0 +1,26 @@
+@media  screen and  (min-height: 760px)  {
+    @media  screen and  (min-width: 1024px)  {
+.cancelWarningContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.cancelWarningContainer>h3{
+   font-size: 20px;
+   color: #000000;
+}
+
+.confirm{
+    background-color: #FF4300;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+}
+
+}
+}
