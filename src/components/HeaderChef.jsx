@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../assets/logoBQ.png";
-
 import "./HeaderChef.scss";
 
 function HeaderChef(props) {
@@ -8,10 +7,7 @@ function HeaderChef(props) {
     <section className="header_nav">
       <section className="header_nameRol">
         <img className="littleLogo" src={logo} alt="logo" />
-        <p>
-          {props.rol}
-          {props.number}
-        </p>
+        <p>{props.rol}</p>
       </section>
       <section className="nav">
         <a href="/">
@@ -26,10 +22,10 @@ function HeaderChef(props) {
           </span>
           Rol
         </a>
-        
-          
+
+
       </section>
-     
+
     </section>
   );
 }

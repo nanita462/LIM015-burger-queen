@@ -1,14 +1,14 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import UseOrdersPending from "./UseOrdersPending.jsx";
 import SinglePendingOrderComponent from "./SinglePendingOrderComponent.jsx";
 import SingleOrderContext from "./SingleOrderContext.jsx";
-import DefaultMessage from "./DefaultMessage.jsx";
-import'./PendingOrderList.scss'
+//import DefaultMessage from "./DefaultMessage.jsx";
+import './PendingOrderList.scss'
 
 const PendingOrders = () => {
   const currentOrdersList = UseOrdersPending();
   const [singleOrderData, setSingleOrderData] = useState();
-  const [selectedOrder, setSelectedOrder] = useState();
+  const [, setSelectedOrder] = useState();
 
   const currentActiveOrder = (orderData) => {
     setSingleOrderData(orderData);
@@ -17,38 +17,37 @@ const PendingOrders = () => {
 
   return (
     <>
-      <ul className="ulPending">
-        {currentOrdersList.map((order) =>
+      <section className='pendingOrderList_Container'>
+        <section className="pendingOrderList">
+          {currentOrdersList.map((order) =>
+          (
+            <button
+              className="descriptionPendingOrder"
+              key={order.orderId}
+              onClick={() => currentActiveOrder(order)}
+            >
+              <h3>Cliente: {order.data.customer}</h3>
+              <h3>Mesa: {order.data.table}</h3>
+            </button>
+          ))}
+        </section>
 
-        (
-          <li
-            className="pendingItem"
-            key={order.orderId}
-            style={
-              order.orderId === selectedOrder
-                ? { backgroundColor: "#5D9B84" }
-                : { backgroundColor: "#FFD195" }
-            }
-            onClick={() => currentActiveOrder(order)}
+        <section className='pendingOrderListDescription_Container'>
+          <SingleOrderContext.Provider
+            value={[singleOrderData, setSingleOrderData]}
           >
+            {singleOrderData === undefined ? (
+              // <DefaultMessage />
+              'Selecciona un pedido para ver el detalle.'
+            ) : (
+              <>
+                <SinglePendingOrderComponent />{" "}
+              </>
+            )}
+          </SingleOrderContext.Provider>
+        </section>
 
-            <button className='description'> <h3>Customer: {order.data.customer}</h3> <h3>Table : {order.data.table}</h3> </button>
-            
-          </li>
-        ))}
-      </ul>
-
-      <SingleOrderContext.Provider
-        value={[singleOrderData, setSingleOrderData]}
-      >
-        {singleOrderData === undefined ? (
-          <DefaultMessage />
-        ) : (
-          <>
-            <SinglePendingOrderComponent />{" "}
-          </>
-        )}
-      </SingleOrderContext.Provider>
+      </section>
     </>
   );
 };

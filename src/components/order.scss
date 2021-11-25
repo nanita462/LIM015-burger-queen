@@ -3,6 +3,23 @@
     padding-left: 10px;
 }
 
+.tab-order{
+        width: 90%;
+        height: 250px;
+        overflow: scroll;
+    }
+    
+.tab-order::-webkit-scrollbar{
+        width: 7px;
+        }
+.tab-order::-webkit-scrollbar:vertical{
+        width:10px;
+    }
+.tab-order::-webkit-scrollbar-thumb{
+        background: grey;
+        border-radius: 25px;
+        }
+
 @media  screen and  (min-height: 768px)  {
     @media  screen and  (min-width: 1024px)  {
     .titleOrder{
@@ -11,7 +28,7 @@
     }
     .orderTitleItem{
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr 2fr;
+        grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
         text-align: center;
         font-size: 15px;
     }

@@ -1,15 +1,22 @@
-#pendingAndDoneContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1%;
+// #chefViewContainer{
+//     // display: grid;
+//     // grid-template-columns: 1fr 1fr;
+//     // column-gap: 1%;
+//     display: flex;
+//     align-content: center;
+// }
+.optionsChefView{
+    display: flex;
+    justify-content: left;
+    padding: 0px 0px 0px 110px
 }
 
-#btnChefContainer{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+// #btnChefContainer{
+//     display: flex;
+//     justify-content: center;
+//     width: 100%;
     
-}
+// }
 #pendingOption, #doneOption{
     color: #000000;
     background-color: #C4C4C4;
@@ -17,7 +24,7 @@
     
 }
 
-#pendingOption, #doneOption:hover{
+#pendingOption:hover, #doneOption:hover{
     background-color:#FCB607;
 }
 

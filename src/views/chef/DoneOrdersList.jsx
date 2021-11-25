@@ -1,13 +1,14 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import UseOrdersDone from "./UseOrdersDone.jsx";
-import DefaultDoneMessage from "./DefaultDoneMessage.jsx";
+//import DefaultDoneMessage from "./DefaultDoneMessage.jsx";
 import SingleDoneOrderContext from "./SingleDoneOrderContext.jsx";
 import SingleDoneOrderComponent from "./SingleDoneOrderComponent.jsx";
+import './DoneOrdersList.scss';
 
 const DoneOrders = () => {
   const currentDoneOrdersList = UseOrdersDone();
   const [singleDoneOrderData, setSingleDoneOrderData] = useState();
-  const [selectedOrder, setSelectedOrder] = useState();
+  const [, setSelectedOrder] = useState();
 
   const currentDoneActiveOrder = (orderData) => {
     setSingleDoneOrderData(orderData)
@@ -16,33 +17,33 @@ const DoneOrders = () => {
 
   return (
     <>
-      <ul className="ulDone">
-        {currentDoneOrdersList.map((order) => (
-          <li
-            className="doneItem"
-            key={order.orderId}
-            onClick={() => currentDoneActiveOrder(order)}
-            style={
-              order.orderId === selectedOrder
-                ? { backgroundColor: "#E04F4F", border: 'solid 5px #FFD195' }
-                : { backgroundColor: "#E04F4F" }
-            }
-          >
-            <div> Customer: {order.data.customer} </div>{" "}
-            <div> Table : {order.data.table} </div>
-          </li>
-        ))}
-      </ul>
+      <section className='doneOrderList_Container'>
+        <section className="doneOrderList">
+          {currentDoneOrdersList.map((order) => (
+            <button
+              className="descriptionDonegOrder"
+              key={order.orderId}
+              onClick={() => currentDoneActiveOrder(order)}
+            >
+              <h3> Cliente: {order.data.customer}</h3>
+              <h3> Mesa : {order.data.table} </h3>
+            </button>
+          ))}
+        </section>
 
-      <SingleDoneOrderContext.Provider value={singleDoneOrderData}>
-        {singleDoneOrderData === undefined ? (
-          <DefaultDoneMessage />
-        ) : (
-          <Fragment>
-            <SingleDoneOrderComponent />{" "}
-          </Fragment>
-        )}
-      </SingleDoneOrderContext.Provider>
+        <section className='doneOrderListDescription_Container'>
+          <SingleDoneOrderContext.Provider value={singleDoneOrderData}>
+            {singleDoneOrderData === undefined ? (
+              // <DefaultDoneMessage />
+              "Selecciona un pedido para ver el detalle."
+            ) : (
+              <>
+                <SingleDoneOrderComponent />{" "}
+              </>
+            )}
+          </SingleDoneOrderContext.Provider>
+        </section>
+      </section>
     </>
   );
 };

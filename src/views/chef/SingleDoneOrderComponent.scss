@@ -1,0 +1,22 @@
+.summaryOrderContainer2{
+    border: solid 1px #ffffff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    padding: 20px;
+    font-size: 20px;
+}
+.itemSummary2>h2{
+    text-align: center;
+}
+
+.titleDoneOrder{
+    display: grid;
+    grid-template-columns:1.5fr 1fr 3fr;
+    text-align: center;
+}
+
+.titleDoneOrder>h3{
+    font-size: 20px;
+}

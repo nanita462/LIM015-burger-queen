@@ -32,7 +32,7 @@ const DoneButtonForChef = () => {
       setSingleOrder();
     } else {
       // notify();
-      alert('algo en donebtnchef')
+      alert('Por favor marcar check en los items listos.')
     }
   };
 

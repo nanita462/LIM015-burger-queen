@@ -1,30 +1,16 @@
-.pendingOrderList_Container{
+.doneOrderList_Container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px 20px 0px 0px;
 }
-
-.pendingOrderList{
+.doneOrderList{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    height: 500px;
-    overflow: scroll;
+    width: 100%;
+    
 }
-
-.pendingOrderList::-webkit-scrollbar{
-    width: 7px;
-    }
-.pendingOrderList::-webkit-scrollbar:vertical{
-    width:10px;
-}
-.pendingOrderList::-webkit-scrollbar-thumb{
-    background: grey;
-    border-radius: 25px;
-    }
-
-.descriptionPendingOrder{
+.descriptionDonegOrder{
     display: flex;
     justify-content: center;
     background-color: #C4C4C4;
@@ -32,15 +18,14 @@
     cursor: pointer;
 }
 
-.descriptionPendingOrder:hover{
+.descriptionDonegOrder:hover{
     background-color: #E82525;
 }
-
 
 @media  screen and  (min-height: 768px)  {
     @media  screen and  (min-width: 1024px)  {
       
-        .descriptionPendingOrder{
+        .descriptionDonegOrder{
             background-color: #C4C4C4;
             border-radius: 25px;
             margin-top: 10px;
@@ -48,10 +33,9 @@
             width: 400px;
             
         }
-        .descriptionPendingOrder h3{
+        .descriptionDonegOrder h3{
             padding: 8px 5px 0px 5px ;
             font-size: 20px;
         }
-        
 }
 }

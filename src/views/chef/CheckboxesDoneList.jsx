@@ -1,11 +1,12 @@
 import React, { useContext, Fragment } from "react";
 import SingleDoneOrderContext from "./SingleDoneOrderContext.jsx";
+import './CheckboxesDoneList.scss'
 
 const CheckboxesDoneList = () => {
   const singleDoneOrder = useContext(SingleDoneOrderContext);
 
   return (
-    <Fragment>
+    <>
       <ul className="checkBoxDoneList">
         {singleDoneOrder.data.order.map((product) => {
           return (
@@ -23,7 +24,7 @@ const CheckboxesDoneList = () => {
           );
         })}
       </ul>
-    </Fragment>
+    </>
   );
 };
 
