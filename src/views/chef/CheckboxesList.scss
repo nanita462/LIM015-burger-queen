@@ -1,0 +1,31 @@
+.checkBoxList{
+    list-style: none;
+    width: 90%;
+    height: 200px;
+    overflow: scroll;
+}
+.checkBoxList::-webkit-scrollbar{
+    width: 7px;
+    }
+.checkBoxList::-webkit-scrollbar:vertical{
+    width:10px;
+}
+.checkBoxList::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 25px;
+}
+
+.labelCheckbox{
+    display: grid;
+    grid-template-columns: 0fr 1fr 2fr 2fr;
+    column-gap: 1%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.productName, .productQuantity{
+    padding-top: 0px;
+    margin-bottom: 5px;
+    padding-bottom: 1px;
+
+}

@@ -91,5 +91,10 @@
     height: 80px;
   }
 }
+.waiterContainer {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 /*# sourceMappingURL=index.css.map */

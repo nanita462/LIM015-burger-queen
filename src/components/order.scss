@@ -1,0 +1,66 @@
+.orderContainer{
+    border-left: solid 1px #ffffff;
+    padding-left: 10px;
+}
+
+.tab-order{
+        width: 90%;
+        height: 250px;
+        overflow: scroll;
+    }
+    
+.tab-order::-webkit-scrollbar{
+        width: 7px;
+        }
+.tab-order::-webkit-scrollbar:vertical{
+        width:10px;
+    }
+.tab-order::-webkit-scrollbar-thumb{
+        background: grey;
+        border-radius: 25px;
+        }
+
+@media  screen and  (min-height: 768px)  {
+    @media  screen and  (min-width: 1024px)  {
+    .titleOrder{
+        text-align: center;
+
+    }
+    .orderTitleItem{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+        text-align: center;
+        font-size: 15px;
+    }
+    .totalOrder>h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    .menu-order-btns{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 50px 0px 50px;
+
+    }
+
+    .menu-order-btns>button{
+    background-color: #C4C4C4;
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    width: 130px;
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+   
+    text-align: center;
+}
+.menu-order-btns>button:hover{    
+        background-color: #558C03;
+    }
+
+
+
+}
+}

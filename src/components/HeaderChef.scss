@@ -32,30 +32,7 @@
     color: white;
     text-decoration: none;
   }
-  .orders-alert{
-    display: flex;  
-    flex-direction: row;
-    padding: 25px 0px 0px 0px;
-}
- 
-  .pending-order-text{
-   padding: 7px 0px 0px 0px;
-   color: #ffffff;
-   font-size: 30px;      
-  }
-
-  .pending-order-number{
-      background-color: #FF4300;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      margin: 10px 0px 0px 0px;
-      text-align: center;
-      padding: 3px 0px 0px 0px;
-      font-size: 20px;
-     
-
-  }
+  
 
  
      
@@ -98,29 +75,8 @@
     padding: 0px 10px 0px 10px;
     margin: 32px 0px 0px 0px;
   }
-  .orders-alert{
-    display: flex;  
-    flex-direction: row;
-    padding: 25px 0px 0px 0px;
-}
+
+
  
-  .pending-order-text{
-   padding: 7px 0px 0px 0px;
-   color: #ffffff;
-   font-size: 30px;      
-  }
-
-  .pending-order-number{
-      background-color: #FF4300;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      margin: 10px 0px 0px 10px;
-      text-align: center;
-      padding: 3px 0px 0px 0px;
-      font-size: 20px;
-     
-
-  }
     }
 }

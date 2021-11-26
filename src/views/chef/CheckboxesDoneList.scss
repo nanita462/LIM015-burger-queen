@@ -1,0 +1,16 @@
+.checkBoxDoneList{
+    list-style: none;
+    width: 90%;
+    height: 200px;
+    overflow: scroll;
+}
+.checkBoxDoneList::-webkit-scrollbar{
+    width: 7px;
+    }
+.checkBoxDoneList::-webkit-scrollbar:vertical{
+    width:10px;
+}
+.checkBoxDoneList::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 25px;
+}

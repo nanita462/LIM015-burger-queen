@@ -2,9 +2,9 @@ import React from "react";
 
 const DefaultDoneMessage = () => {
   return (
-    <div className="rectangle">
-      <div className="message">Click a delivered order to see its details</div>
-    </div>
+    <section className="rectangle">
+      <h3 className="message">Seleccione un pedido para ver el detalle</h3>
+    </section>
   );
 };
 

@@ -1,31 +1,39 @@
-.menuDescriptions{
+.doneOrderList_Container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 20px 0px 0px;
+}
+.doneOrderList{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-
-
     
 }
-.description{
+.descriptionDonegOrder{
     display: flex;
     justify-content: center;
-    
+    background-color: #C4C4C4;
+    border: none;
+    cursor: pointer;
+}
+
+.descriptionDonegOrder:hover{
+    background-color: #E82525;
 }
 
 @media  screen and  (min-height: 768px)  {
     @media  screen and  (min-width: 1024px)  {
       
-        .description{
+        .descriptionDonegOrder{
             background-color: #C4C4C4;
             border-radius: 25px;
-            border: none;
-            cursor: pointer;
-            margin-top: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
             width: 400px;
             
         }
-        .description h3{
+        .descriptionDonegOrder h3{
             padding: 8px 5px 0px 5px ;
             font-size: 20px;
         }

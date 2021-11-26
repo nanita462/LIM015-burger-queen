@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect, Fragment } from "react";
 import SingleOrderContext from "./SingleOrderContext";
 import { firestore } from "../../firebase/config";
-
+import './CheckboxesList.scss'
 const CheckboxesList = () => {
   const [singleOrder,] = useContext(SingleOrderContext);
   const [box, setBox] = useState(false);
@@ -35,7 +35,7 @@ const CheckboxesList = () => {
   };
 
   return (
-    <Fragment>
+    <>
       <ul className="checkBoxList">
         {singleOrder.data.order.map((product) => {
           return (
@@ -59,14 +59,14 @@ const CheckboxesList = () => {
                 />
                 <span className="customCheckbox"></span>
 
-                <div className="productQuantity">{product.quantity}</div>
-                <div className="productName">{product.product}</div>
+                <p className="productQuantity">{product.quantity}</p>
+                <p className="productName">{product.product}</p>
               </label>
             </li>
           );
         })}
       </ul>
-    </Fragment>
+    </>
   );
 };
 

@@ -6,10 +6,11 @@ import NavigationMenu from "../../components/navigationMenu.jsx";
 import Data from "../../data/data.json";
 import Modal from "../modal/modal.jsx";
 import ModalContent from "../modal/modalContent.jsx";
-import { DeviceMesssagePhone } from "../../components/deviceMessage";
+//import { DeviceMesssagePhone } from "../../components/deviceMessage";
+
 //import { NotifyErrorCanceled } from "../../components/notification.jsx";
 //import { ToastContainer } from "react-toastify";
-//import '../../build/css/index.css'; // para aplicar estilo sass
+import '../../build/css/index.css'; // para aplicar estilo sass
 
 function WaiterView() {
   const [menu, setMenu] = useState("Desayuno");
@@ -84,19 +85,19 @@ function WaiterView() {
   };
 
   return (
-    <div className="waiter-container">
-      <div className="waiter-box">
-        <div className="header-waiter">
+    <>
+      <section className="waiter-box">
+        
           <Header rol="Waiter" />
-        </div>
-        <div className="menu-container">
-          <div className="menu-option">
+       
+        <section className="waiterContainer">
+          <section className="menu-option">
             <NavigationMenu
               onBreakfast={() => setMenu("Desayuno")}
               onLunch={() => setMenu("De la casa")}
               onDrinks={() => setMenu("Bebidas")}
             />
-            <div className="data-button-product">
+            <section className="data-button-product">
               {data
                 .filter((sort) => sort.type.includes(menu))
                 .map((item, index) => (
@@ -109,14 +110,14 @@ function WaiterView() {
                     price={item.price}
                   />
                 ))}
-              ;
-            </div>
+              
+            </section>
             <Modal open={open} close={() => setOpen(false)}>
               <ModalContent onClick={(e) => addExtrasOrder(e)} />
             </Modal>
             {/* <ToastContainer /> */}
-          </div>
-          <div className="menu-order">
+          </section>
+          <section className="menu-order">
             <Order
               data-testid="order"
               order={order}
@@ -126,11 +127,11 @@ function WaiterView() {
                 //NotifyErrorCanceled();
               }}
             />
-          </div>
-        </div>
-      </div>
-      <DeviceMesssagePhone />
-    </div>
+          </section>
+        </section>
+      </section>
+      {/* <DeviceMesssagePhone /> */}
+    </>
   );
 }
 

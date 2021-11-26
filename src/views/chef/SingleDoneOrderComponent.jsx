@@ -1,25 +1,29 @@
 import React, { useContext } from "react";
 import SingleDoneOrderContext from "./SingleDoneOrderContext.jsx";
 import CheckboxesDoneList from "./CheckboxesDoneList.jsx";
+import './SingleDoneOrderComponent.scss'
 
 const SingleDoneOrderComponent = () => {
   const singleDoneOrder = useContext(SingleDoneOrderContext);
 
   return (
-    <div className="rectangle">
-      <div className="customerTitle"> Cliente: </div>
-      <div id="customerName"> {singleDoneOrder.data.customer}</div>
-      <div className="tableTitle"> Mesa:</div>
-      <div id="tableNumber"> {singleDoneOrder.data.table}</div>
-      <div className="entry">Hora ingreso:</div>
-      <div className="entryDateHour">{singleDoneOrder.data.init_time} </div>
-      <div className="prepared">Hora salida:</div>
-      <div className="doneDateHour">{singleDoneOrder.data.done_time} </div>
-      <div className="quantityDone">Cant.</div>
-      <div className="productDone">Producto</div>
+    <section className="summaryOrderContainer2">
+      <section className="itemSummary2">
+        <h2>Orden Listo</h2>
+        <p id="customerName2"> Cliente: {singleDoneOrder.data.customer}</p>
+        <p id="tableNumber2">Mesa: {singleDoneOrder.data.table}</p>
+        <p className="entryDateHour2">Hora ingreso: {singleDoneOrder.data.init_time}</p>
+        <p className="doneDateHour">Hora salida: {singleDoneOrder.data.done_time}</p>
 
+        <section className='titleDoneOrder'>
+
+          <h3 className="quantity">Cant.</h3>
+          <h3 className="product">Producto</h3>
+        </section>
+
+      </section>
       <CheckboxesDoneList />
-    </div>
+    </section>
   );
 };
 

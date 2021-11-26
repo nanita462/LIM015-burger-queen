@@ -1,6 +1,6 @@
 import React from "react";
 //import Phone from "../assets/phone.png";
-import "./deviceMessage.scss";
+//import "../sass/DeviceMesssage.scss";
 
 export function DeviceMesssagePhone() {
   return (

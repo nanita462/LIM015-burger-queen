@@ -1,13 +1,13 @@
 import React, { Fragment, useState } from "react";
-
 import Modal from "../../views/modal/modal.jsx";
 import CancelWarning from "./CancelWarning.jsx";
+import './SinglePendingOrderComponent.scss'
 
 const CancelButtonForChef = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Fragment>
+    <>
       <button
         className="cancelButtonForChef"
         onClick={() => {
@@ -19,7 +19,7 @@ const CancelButtonForChef = () => {
       <Modal open={open} close={() => setOpen(false)}>
         <CancelWarning />
       </Modal>
-    </Fragment>
+    </>
   );
 };
 

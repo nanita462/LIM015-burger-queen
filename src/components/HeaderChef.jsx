@@ -1,43 +1,32 @@
 import React from "react";
 import logo from "../assets/logoBQ.png";
-import { Link } from "react-router-dom";
-import "./header.scss";
+import "./HeaderChef.scss";
 
 function HeaderChef(props) {
   return (
-    <div className="header-nav">
-      <div className="header-item">
-        <img className="logo" src={logo} width="55" height="55" alt="logo" />
-      </div>
-      <div className="header-text">
-        <h2 className="title">BQueen</h2>
-        <p className="rol-text">
-          {props.rol}
-          {props.number}
-        </p>
-      </div>
+    <section className="header_nav">
+      <section className="header_nameRol">
+        <img className="littleLogo" src={logo} alt="logo" />
+        <p>{props.rol}</p>
+      </section>
+      <section className="nav">
+        <a href="/">
+          <span>
+            <i className="fas fa-home"></i>
+          </span>
+          Inicio
+        </a>
+        <a href="/rol">
+          <span>
+            <i className="fas fa-user-friends"></i>
+          </span>
+          Rol
+        </a>
 
 
+      </section>
 
-      <div>
-        <nav>
-          <input className="menu-checkbox" type="checkbox" id="menu" />
-          <label className="menu" htmlFor="menu">
-            &#x2630;
-          </label>
-          <ul className="ul-menu">
-            <Link to="/user">
-              <li className="li-menu">Rol</li>
-            </Link>
-            <Link to="/">
-              <li className="li-menu">Exit</li>
-            </Link>
-          </ul>
-        </nav>
-      </div>
-      <hr />
-      <hr />
-    </div>
+    </section>
   );
 }
 export default HeaderChef;

@@ -7,15 +7,15 @@ function Modal({ children, open, close }) {
 
   return ReactDom.createPortal(
     <>
-      <div className="overlay" />
-      <div className="modal-container">
-        <span className="close-modal" onClick={close}>
-          X
+      <section className="overlay" />
+      <section className="modal-container">
+        <span>
+        <i class= "close-modal fas fa-times-circle" onClick={close}></i>
         </span>
         {children}
-      </div>
+      </section>
     </>,
-    document.getElementById("portal")
+    document.getElementById("modalSection")
   );
 }
 

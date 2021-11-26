@@ -3,7 +3,7 @@ import React from "react";
 const DefaultMessage = () => {
   return (
     <div className="rectangle">
-      <div className="message">Click an order to see its details</div>
+      <h3 className="message">Seleccione un pedido para ver el detalle</h3>
     </div>
   );
 };
